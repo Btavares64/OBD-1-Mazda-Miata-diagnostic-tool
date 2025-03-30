@@ -13,5 +13,5 @@
 - website to interact with the diagnostic tool
 
 # References
-- http://www.sandiegomiataclub.org/miata_tech/na/na_engine_diagnostic_codes.html
+- https://www.miata.net/garage/faultcodes.html
 
