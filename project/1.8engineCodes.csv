@@ -1,0 +1,18 @@
+
+value, code
+01, IGF signal
+03, SGT signal
+04, SGC signal
+08, Mass Airflow sensor
+09, Engine coolant temperature sensor
+10, Intake air temperature sensor (mass airflow sensor)
+12, Throttle position sensor
+14, Barometric absolute pressure sensor
+15, Heated oxygen sensor (inactivation)
+16, EGR function sensor
+17, Heated oxygen sensor (inversion)
+25, PRC solenoid valve
+26, Purge solenoid valve
+28, EGR solenoid valve (vacuum)
+29, EGR solenoid valve (vent)
+34, ISC valve
