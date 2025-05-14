@@ -1,32 +1,198 @@
-#include "pico/stdlib.h"
+#include <stdio.h>
+#include <time.h>
+//#include "pico/stdlib.h" // pico sdk library
+#include <string.h>
+#include <unistd.h>
 
 /*
- * This is for reference, this has nothing to do with the current project
- * I made a  4 bit counter and this was the aftermath :)
+Author: Brandon Tavares
 */
-#define USER_INPUT 15  // Input Pin
-#define LED1 10 // this controlls 2^0
-#define LED2 11 // this controlls 2^1
-#define LED3 12 // this controls 2^2
-#define LED4 13 // this controls 2^3
+
+// ######### GLOABAL VARIABLE DECLARATION ##############
 
 
-int main() 
+
+// ######### FUNCTION PROTOTYPES #######################
+
+void checkEngine();
+
+void checkAirbags();
+
+void aboutTool();
+
+void resetCode();
+
+void clearTerminal();
+
+int main()
 {
-    gpio_init(USER_INPUT); // initilize pin 15 as input
-    gpio_set_dir(USER_INPUT, GPIO_IN); //set pin 15
+    // ######### INTILIZE PINS ##############
 
-    gpio_init(LED1);                // Initialize GPIO pin 10
-    gpio_set_dir(LED1, GPIO_OUT);   // Set GPIO pin 10 as an output
 
-    gpio_init(LED2);                // Initialize GPIO pin 11
-    gpio_set_dir(LED2, GPIO_OUT);   // Set GPIO pin 11 as an output
+    // ######### INTRODUCTION AND USER SELECTION ##############
+    
+    // clear previous terminal commands to make it easier to read
+    clearTerminal();
 
-    gpio_init(LED3);                // Initialize GPIO pin 12
-    gpio_set_dir(LED3, GPIO_OUT);   // Set GPIO pin 12 as an output
+    char userInput; // user input
+    
+    //stdio_init_all();
+    
+    printf("1. Scan Engine\n");
+    printf("2. Scan Airbags\n");
+    printf("3. About the Diagnostics Tool\n");
+    printf("4. Reset Engine Code\n");
+    printf("5. Quit\n");
 
-    gpio_init(LED4);                // Initialize GPIO pin 13
-    gpio_set_dir(LED4, GPIO_OUT);   // Set GPIO pin 13 as an output
+    printf("\nPick: ");
 
-    // while loop for reference
+    while (userInput != '5')
+    {
+        scanf(" %c", &userInput);
+
+        // This switch case will handle user selection
+        switch (userInput)
+        {
+            case '1':
+                checkEngine();
+                break;
+            case '2':
+                checkAirbags();
+                break;
+            case '3':
+                aboutTool();
+                break;
+            case '4':
+                resetCode();
+                break;
+            case '5':
+                printf("\nProgram End\n\n");
+                return 0;
+            default:
+                printf("\nInvalid Entry\n\n");
+        }
+        
+        printf("1. Scan Engine\n");
+        printf("2. Scan Airbags\n");
+        printf("3. About the Diagnostics Tool\n");
+        printf("4. Reset Engine Code\n");
+        printf("5. Quit\n");
+
+	printf("\nPick: ");
+    }
+    
+    
+    return 0;
+}
+
+// ######### FUNCTION IMPLEMENTATION ##############
+void checkEngine()
+{
+    // clear previous terminal commands to make it easier to read
+    clearTerminal();
+
+    puts("\ncheck engine has been successfully reached\n");
+}
+
+void checkAirbags()
+{
+    // clear previous terminal commands to make it easier to read
+    clearTerminal();
+
+    puts("\ncheck airbags has been successfully reached\n");
+}
+
+/*
+
+aboutTool - function will assist users on the process of utilizing this
+diagnostics tool.
+
+Dependencies - about.txt file
+*/
+void aboutTool()
+{
+
+    // clear previous terminal commands to make it easier to read
+    clearTerminal();
+
+    // array to store the contents of the instructions file
+    char buffer[1024];
+    char input;
+    char ch;
+
+    FILE *document = fopen("instructions.txt", "r");
+
+    fgets(buffer, 1024, document); // store file contents into the buffer
+
+    // output document
+    while ((ch = fgetc(document)) != EOF)
+    {
+        putchar(ch);
+    }
+
+    fclose(document); // close file
+    
+    // return back to menu
+    printf("\nEnter 1 to Return Back to Main Menu\n\n");
+
+    // return to the menu
+    while(input != '1')
+    {
+        scanf (" %c", &input);
+ 
+        if (input != '1')
+	{
+	    printf("\nInvalid Entry, Enter 1 to Return Back to Main Menu\n\n");
+	}
+    }
+
+    clearTerminal();
+}
+
+void resetCode()
+{
+
+//################# USER NOTICE WHILE RESETING CODE ##############################
+   
+    // clear previous terminal commands to make it easier to read
+    clearTerminal();
+
+    printf("\n IMPORTANT NOTICE\n");
+    printf("###################\n");
+    
+    printf("Keep termimal running while reseting code. Process may take up to 10 minutes.\n"); 
+
+//####################### TIMER ######################################################
+// update user every 30 seconds on the current wait time
+    
+    int timeKeep = 600;
+    
+    while(timeKeep != 0)
+    {
+        sleep (1);
+	timeKeep--;
+
+	if (timeKeep % 30 == 0)
+	{
+	    int minutes = timeKeep / 60;
+            int seconds = timeKeep % 60;
+
+	    printf("\n%d:%02d remaining....\n\n", minutes, seconds);
+	}
+ 	
+    }
+
+    // clear previous terminal commands to make it easier to read
+    clearTerminal();
+
+    printf("\nEngine Codes Cleared.\n\n");
+}
+
+void clearTerminal()
+{
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
+    printf("#########################################\n");
+    printf("# NA Miata Diagnostics Tool Version 1.0 #\n");
+    printf("#########################################\n\n");
 }

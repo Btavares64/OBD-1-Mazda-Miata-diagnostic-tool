@@ -1,0 +1,17 @@
+
+##############################
+# How To Use Diagnostic Tool #
+##############################
+
+~~ This isnt final instruction guide ~~
+
+Getting Started:
+
+- In order to get started you plug in your device, once plugged in, turn your
+key into accesory mode
+
+- Open your terminal and interact with the interface to get to the appropriate setting 
+
+Code Reset:
+
+- Allow the system 10 minutes in order to reset the engine code 
