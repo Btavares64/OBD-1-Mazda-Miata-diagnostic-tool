@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duckmadeofwood/Desktop/project
+CMAKE_SOURCE_DIR = /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duckmadeofwood/Desktop/project/build
+CMAKE_BINARY_DIR = /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build
 
 # Include any dependencies generated for this target.
 include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/depend.make
@@ -70,17 +70,17 @@ include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/progress.make
 include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/flags.make
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/flags.make
-pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o: /home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/boot_stage2/compile_time_choice.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/duckmadeofwood/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o"
-	cd /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/bs2_default.dir/compile_time_choice.S.o   -c /home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/boot_stage2/compile_time_choice.S
+pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/boot_stage2/compile_time_choice.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o"
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/bs2_default.dir/compile_time_choice.S.o   -c /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/boot_stage2/compile_time_choice.S
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/bs2_default.dir/compile_time_choice.S.i"
-	cd /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/boot_stage2/compile_time_choice.S > CMakeFiles/bs2_default.dir/compile_time_choice.S.i
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/boot_stage2/compile_time_choice.S > CMakeFiles/bs2_default.dir/compile_time_choice.S.i
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/bs2_default.dir/compile_time_choice.S.s"
-	cd /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/boot_stage2/compile_time_choice.S -o CMakeFiles/bs2_default.dir/compile_time_choice.S.s
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/boot_stage2/compile_time_choice.S -o CMakeFiles/bs2_default.dir/compile_time_choice.S.s
 
 # Object files for target bs2_default
 bs2_default_OBJECTS = \
@@ -91,22 +91,22 @@ bs2_default_EXTERNAL_OBJECTS =
 
 pico-sdk/src/rp2040/boot_stage2/bs2_default.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o
 pico-sdk/src/rp2040/boot_stage2/bs2_default.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build.make
-pico-sdk/src/rp2040/boot_stage2/bs2_default.elf: /home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/boot_stage2/boot_stage2.ld
+pico-sdk/src/rp2040/boot_stage2/bs2_default.elf: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/boot_stage2/boot_stage2.ld
 pico-sdk/src/rp2040/boot_stage2/bs2_default.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/duckmadeofwood/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking ASM executable bs2_default.elf"
-	cd /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bs2_default.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-objdump -h /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf > bs2_default.dis
-	cd /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-objdump -d /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf >> bs2_default.dis
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking ASM executable bs2_default.elf"
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bs2_default.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-objdump -h /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf > bs2_default.dis
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-objdump -d /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf >> bs2_default.dis
 
 # Rule to build all files generated by this target.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build: pico-sdk/src/rp2040/boot_stage2/bs2_default.elf
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/clean:
-	cd /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default.dir/cmake_clean.cmake
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/clean
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/depend:
-	cd /home/duckmadeofwood/Desktop/project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duckmadeofwood/Desktop/project /home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/boot_stage2 /home/duckmadeofwood/Desktop/project/build /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/boot_stage2 /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/depend
 

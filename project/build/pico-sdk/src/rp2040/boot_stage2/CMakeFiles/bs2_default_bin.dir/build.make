@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duckmadeofwood/Desktop/project
+CMAKE_SOURCE_DIR = /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duckmadeofwood/Desktop/project/build
+CMAKE_BINARY_DIR = /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build
 
 # Utility rule file for bs2_default_bin.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/progress.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin: pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 pico-sdk/src/rp2040/boot_stage2/bs2_default.bin: pico-sdk/src/rp2040/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/duckmadeofwood/Desktop/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
-	cd /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-objcopy -Obinary /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-objcopy -Obinary /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 bs2_default_bin: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin
 bs2_default_bin: pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
@@ -82,10 +82,10 @@ pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build: bs2_defaul
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
-	cd /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend:
-	cd /home/duckmadeofwood/Desktop/project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duckmadeofwood/Desktop/project /home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/boot_stage2 /home/duckmadeofwood/Desktop/project/build /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2 /home/duckmadeofwood/Desktop/project/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/boot_stage2 /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2 /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 

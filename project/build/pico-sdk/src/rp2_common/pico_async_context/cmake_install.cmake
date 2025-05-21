@@ -1,4 +1,4 @@
-# Install script for directory: /home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_async_context
+# Install script for directory: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_async_context
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -147,9 +147,9 @@ CMakeFiles/picotool.dir/data_locs.cpp.o: data_locs.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
-CMakeFiles/picotool.dir/lib/whereami/whereami++.cpp.o: /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/whereami/whereami++.cpp \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/whereami/whereami++.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/whereami/whereami.c \
+CMakeFiles/picotool.dir/lib/whereami/whereami++.cpp.o: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/whereami/whereami++.cpp \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/whereami/whereami++.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/whereami/whereami.c \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -346,8 +346,8 @@ CMakeFiles/picotool.dir/lib/whereami/whereami++.cpp.o: /home/duckmadeofwood/Desk
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
-CMakeFiles/picotool.dir/lib/whereami/whereami.c.o: /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/whereami/whereami.c \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/whereami/whereami.h \
+CMakeFiles/picotool.dir/lib/whereami/whereami.c.o: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/whereami/whereami.c \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/whereami/whereami.h \
   /usr/include/alloca.h \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
@@ -424,33 +424,48 @@ CMakeFiles/picotool.dir/lib/whereami/whereami.c.o: /home/duckmadeofwood/Desktop/
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
-CMakeFiles/picotool.dir/main.cpp.o: /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/main.cpp \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_picobin_headers/include/boot/picobin.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_usb_reset_interface_headers/include/pico/usb_reset_interface.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/host/pico_platform/include/pico/platform.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/otp_data.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h \
-  /home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/bintool/bintool.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/bintool/metadata.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/cli.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/clipp/clipp.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/addresses.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/elf.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/elf_file.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf2uf2/elf2uf2.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/errors/errors.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/otp.h \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/picoboot_connection/picoboot_connection.h \
+CMakeFiles/picotool.dir/main.cpp.o: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/main.cpp \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/aes.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/bignum.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/ctr_drbg.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/ecdsa.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/ecp.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/entropy.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/md.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/pk.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/platform_time.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/platform_util.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/sha256.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/sha512.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/version.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_picobin_headers/include/boot/picobin.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_usb_reset_interface_headers/include/pico/usb_reset_interface.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/host/pico_platform/include/pico/platform.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/otp_data.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/bintool/bintool.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/bintool/mbedtls_wrapper.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/bintool/metadata.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/cli.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/clipp/clipp.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/addresses.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/elf.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/elf_file.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf2uf2/elf2uf2.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/errors/errors.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/include/picotool_mbedtls_config.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/otp.h \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/picoboot_connection/picoboot_connection.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -630,6 +645,7 @@ CMakeFiles/picotool.dir/main.cpp.o: /home/duckmadeofwood/Desktop/project/build/_
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stack \
   /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/system_error \
@@ -648,9 +664,11 @@ CMakeFiles/picotool.dir/main.cpp.o: /home/duckmadeofwood/Desktop/project/build/_
   /usr/include/features.h \
   /usr/include/inttypes.h \
   /usr/include/libintl.h \
+  /usr/include/limits.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/ioctl.h \
+  /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
@@ -690,12 +708,15 @@ CMakeFiles/picotool.dir/main.cpp.o: /home/duckmadeofwood/Desktop/project/build/_
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -771,6 +792,7 @@ CMakeFiles/picotool.dir/main.cpp.o: /home/duckmadeofwood/Desktop/project/build/_
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
   /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
@@ -781,6 +803,7 @@ CMakeFiles/picotool.dir/main.cpp.o: /home/duckmadeofwood/Desktop/project/build/_
   /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
@@ -805,14 +828,16 @@ CMakeFiles/picotool.dir/main.cpp.o: /home/duckmadeofwood/Desktop/project/build/_
   /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
-CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/no_otp.cpp \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp \
-  /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/otp.h \
+CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/no_otp.cpp \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp \
+  /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/otp.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1098,8 +1123,6 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/no_otp.cpp:
-
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
 /usr/include/x86_64-linux-gnu/sys/ioctl.h:
@@ -1110,6 +1133,8 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
 
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
@@ -1118,19 +1143,17 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
@@ -1139,6 +1162,8 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -1162,6 +1187,8 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/unistd.h:
 
+/usr/include/linux/close_range.h:
+
 /usr/include/libintl.h:
 
 /usr/include/c++/13/version:
@@ -1173,8 +1200,6 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/13/map:
-
-/usr/include/c++/13/locale:
 
 /usr/include/c++/13/iostream:
 
@@ -1210,6 +1235,8 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/c++/13/bits/unordered_map.h:
 
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
 /usr/include/c++/13/bits/stream_iterator.h:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
@@ -1226,8 +1253,6 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/c++/13/bits/stl_numeric.h:
 
-/usr/include/c++/13/bits/stl_multiset.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
 /usr/include/c++/13/bits/stl_map.h:
@@ -1237,8 +1262,6 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 /usr/include/c++/13/bits/stl_heap.h:
 
 /usr/include/c++/13/bits/stl_deque.h:
-
-/usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/bits/slice_array.h:
 
@@ -1274,13 +1297,31 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+/usr/include/c++/13/bits/hashtable_policy.h:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/usr/include/c++/13/bits/gslice.h:
+
+/usr/include/c++/13/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/c++/13/bits/deque.tcc:
+
+/usr/include/c++/13/bits/stl_tree.h:
+
+/usr/include/c++/13/bits/codecvt.h:
 
 /usr/include/c++/13/bits/valarray_array.h:
 
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_picobin_headers/include/boot/picobin.h:
 
 /usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
 
@@ -1294,9 +1335,13 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h:
+/usr/include/c++/13/bits/hashtable.h:
 
-/usr/include/c++/13/bits/hashtable_policy.h:
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/math.h:
 
@@ -1306,10 +1351,6 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/c++/13/bits/range_access.h:
 
-/usr/include/c++/13/compare:
-
-/usr/include/c++/13/system_error:
-
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/signal.h:
@@ -1317,6 +1358,10 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 /usr/include/c++/13/iomanip:
 
 /usr/include/strings.h:
+
+/usr/include/c++/13/cuchar:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/c++/13/cassert:
 
@@ -1330,6 +1375,8 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/x86_64-linux-gnu/bits/select2.h:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
+
 /usr/include/c++/13/bits/quoted_string.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio2.h:
@@ -1340,9 +1387,9 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/locale.h:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/elf.h:
 
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/main.cpp:
+/usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -1362,27 +1409,15 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/include/c++/13/exception:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
 /usr/include/c++/13/bits/basic_string.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/c++/13/bits/deque.tcc:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
 /usr/include/c++/13/bits/atomic_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_picobin_headers/include/boot/picobin.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
@@ -1392,17 +1427,15 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/c++/13/bits/refwrap.h:
 
-/usr/include/c++/13/bits/gslice.h:
-
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/elf_file.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/otp_data.h:
 
 /usr/include/stdlib.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/clipp/clipp.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
@@ -1428,7 +1461,9 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/c++/13/vector:
 
-/usr/include/c++/13/ext/alloc_traits.h:
+/usr/include/c++/13/bits/gslice_array.h:
+
+/usr/include/c++/13/new:
 
 /usr/include/c++/13/deque:
 
@@ -1452,11 +1487,15 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /home/duckmadeofwood/Desktop/project/build
 
 /usr/include/c++/13/bits/ostream_insert.h:
 
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/ctr_drbg.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
 
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/whereami/whereami++.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -1480,6 +1519,8 @@ data_locs.cpp:
 
 /usr/include/c++/13/bits/stl_iterator.h:
 
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
 /usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
@@ -1500,11 +1541,11 @@ data_locs.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_usb_reset_interface_headers/include/pico/usb_reset_interface.h:
+
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
 /usr/include/c++/13/ext/string_conversions.h:
-
-/usr/include/c++/13/bits/postypes.h:
 
 /usr/include/c++/13/bits/std_abs.h:
 
@@ -1514,25 +1555,19 @@ data_locs.cpp:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf2uf2/elf2uf2.h:
+
 /usr/include/c++/13/clocale:
-
-/usr/include/c++/13/bit:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
 
 /usr/include/c++/13/bits/functional_hash.h:
 
 /usr/include/errno.h:
-
-/usr/include/c++/13/bits/indirect_array.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/13/bits/stringfwd.h:
 
 /usr/include/c++/13/backward/binders.h:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/clipp/clipp.h:
 
 /usr/include/c++/13/unordered_map:
 
@@ -1558,11 +1593,11 @@ data_locs.cpp:
 
 /usr/include/c++/13/bits/move.h:
 
-/usr/include/c++/13/bits/localefwd.h:
-
 /usr/include/c++/13/type_traits:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/sha256.h:
 
 /usr/include/c++/13/bits/vector.tcc:
 
@@ -1582,11 +1617,11 @@ data_locs.cpp:
 
 /usr/include/c++/13/debug/debug.h:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/no_otp.cpp:
+
 /usr/include/c++/13/bits/ptr_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h:
-
-/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
 
 /usr/include/x86_64-linux-gnu/bits/select-decl.h:
 
@@ -1596,23 +1631,17 @@ data_locs.cpp:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
+/usr/include/c++/13/bits/forward_list.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
 /usr/include/string.h:
-
-/usr/include/c++/13/new:
-
-/usr/include/c++/13/bits/gslice_array.h:
 
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf2uf2/elf2uf2.h:
-
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/whereami/whereami.h:
 
 /usr/include/c++/13/bits/stl_construct.h:
 
@@ -1622,7 +1651,13 @@ data_locs.cpp:
 
 /usr/include/c++/13/cctype:
 
+/usr/include/limits.h:
+
 /usr/include/c++/13/initializer_list:
+
+/usr/include/c++/13/bits/erase_if.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2-decl.h:
 
 /usr/include/c++/13/ext/type_traits.h:
 
@@ -1646,13 +1681,21 @@ data_locs.cpp:
 
 /usr/include/c++/13/bits/ios_base.h:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/version.h:
 
 /usr/include/c++/13/cwchar:
 
@@ -1670,11 +1713,21 @@ data_locs.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/whereami/whereami++.cpp:
+/usr/include/c++/13/bits/forward_list.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/whereami/whereami++.cpp:
 
 /usr/include/c++/13/bits/ostream.tcc:
 
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/whereami/whereami.c:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/whereami/whereami++.h:
+
+/usr/include/c++/13/compare:
+
+/usr/include/c++/13/system_error:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/whereami/whereami.c:
 
 /usr/include/c++/13/bits/basic_ios.tcc:
 
@@ -1688,17 +1741,29 @@ data_locs.cpp:
 
 /usr/include/c++/13/typeinfo:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/aes.h:
+
 /usr/include/c++/13/bits/exception_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/host/pico_platform/include/pico/platform.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/otp.h:
+
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/bits/locale_facets.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/elf_file.h:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
@@ -1718,6 +1783,8 @@ data_locs.cpp:
 
 /usr/include/c++/13/cwctype:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h:
+
 /usr/include/c++/13/ios:
 
 /usr/include/c++/13/stdexcept:
@@ -1730,13 +1797,21 @@ data_locs.cpp:
 
 /usr/include/stdint.h:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/platform_util.h:
+
 /usr/include/pthread.h:
 
 /usr/include/wctype.h:
 
 /usr/include/sched.h:
 
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
 /usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/sha512.h:
 
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
@@ -1758,8 +1833,6 @@ data_locs.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -1767,6 +1840,16 @@ data_locs.cpp:
 /usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
@@ -1780,75 +1863,87 @@ data_locs.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/whereami/whereami.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/main.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/bignum.h:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/ecdsa.h:
+
+/usr/include/c++/13/bits/indirect_array.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/ecp.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/entropy.h:
+
+/usr/include/c++/13/locale:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/md.h:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/pk.h:
+
+/usr/include/c++/13/bit:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/include/picotool_mbedtls_config.h:
+
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/platform_time.h:
+
 /usr/include/c++/13/bits/regex_scanner.h:
 
 /usr/include/c++/13/cstdlib:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h:
 
-/usr/include/assert.h:
+/usr/include/c++/13/bits/charconv.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/linux/close_range.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_usb_reset_interface_headers/include/pico/usb_reset_interface.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/c++/13/bits/stl_algo.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/host/pico_platform/include/pico/platform.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/otp_data.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/bintool/bintool.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h:
+/usr/include/c++/13/bits/stl_multiset.h:
 
-/usr/include/c++/13/bits/unique_ptr.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/bintool/mbedtls_wrapper.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/bintool/metadata.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/cli.h:
 
-/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
+/usr/include/c++/13/exception:
 
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/bintool/bintool.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/addresses.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/errors/errors.h:
 
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/bintool/metadata.h:
+/usr/include/c++/13/algorithm:
 
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/cli.h:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/addresses.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/elf.h:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/errors/errors.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/otp.h:
-
-/usr/include/c++/13/cuchar:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/picoboot_connection/picoboot_connection.h:
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/picoboot_connection/picoboot_connection.h:
 
 /usr/include/asm-generic/ioctl.h:
 
-/usr/include/c++/13/algorithm:
+/usr/include/assert.h:
 
 /usr/include/c++/13/array:
 
@@ -1856,30 +1951,6 @@ data_locs.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp:
+
 /usr/include/c++/13/bits/algorithmfwd.h:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar2-decl.h:
-
-/usr/include/c++/13/bits/erase_if.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/c++/13/bits/forward_list.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
-
-/usr/include/c++/13/bits/forward_list.tcc:
-
-/usr/include/c++/13/bits/fstream.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/c++/13/bits/locale_conv.h:

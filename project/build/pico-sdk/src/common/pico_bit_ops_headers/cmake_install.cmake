@@ -1,4 +1,4 @@
-# Install script for directory: /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_bit_ops_headers
+# Install script for directory: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_bit_ops_headers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

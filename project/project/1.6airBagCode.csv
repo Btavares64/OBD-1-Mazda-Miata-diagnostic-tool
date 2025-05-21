@@ -1,0 +1,11 @@
+FlashValue,code
+101,"*Faulty Diagnostic Module\n*Poor Connection Of Diagnostic Module Connector"
+3,"*Open Circuit\n*Poor Connection of Power Source Circuit"
+5,"*Faulty Front Impact Sensor"
+10,"*Faulty Diagnostic Module"
+4,"*Faulty Rear safing Sensor"
+6,"*Faulty Air Bag Module\n*Poor Connection Of Clockspring Connector"
+7,"*Poor Wiring Harness Ground"
+8,"*Poor Ground Of Front Impact Sensor"
+9,"*Open Circuit Between Diagnostic Module and Front Impact Sensor"
+2,"*Poor Ground Of All Front Impact Sensors"

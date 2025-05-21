@@ -1,7 +1,7 @@
 CMakeFiles/picotool.dir/main.cpp.o: \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/main.cpp \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/cli.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/cli.h \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -186,7 +186,8 @@ CMakeFiles/picotool.dir/main.cpp.o: \
  /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/limits \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/clipp/clipp.h \
+ /usr/include/c++/13/cstdint \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/clipp/clipp.h \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
@@ -195,8 +196,8 @@ CMakeFiles/picotool.dir/main.cpp.o: \
  /usr/include/c++/13/bits/stl_stack.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h /usr/include/c++/13/iterator \
  /usr/include/c++/13/bits/stream_iterator.h /usr/include/c++/13/cinttypes \
- /usr/include/c++/13/cstdint /usr/include/inttypes.h \
- /usr/include/c++/13/csignal /usr/include/signal.h \
+ /usr/include/inttypes.h /usr/include/c++/13/csignal \
+ /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
@@ -251,35 +252,59 @@ CMakeFiles/picotool.dir/main.cpp.o: \
  /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/array \
  /usr/include/c++/13/compare /usr/include/c++/13/cstdarg \
  /usr/include/c++/13/iomanip /usr/include/c++/13/bits/quoted_string.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_picobin_headers/include/boot/picobin.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/host/pico_platform/include/pico/platform.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_picobin_headers/include/boot/picobin.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/host/pico_platform/include/pico/platform.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/picoboot_connection/picoboot_connection.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/addresses.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/bintool/bintool.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/elf_file.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/picoboot_connection/picoboot_connection.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/addresses.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/bintool/bintool.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/bintool/mbedtls_wrapper.h \
+ /usr/include/c++/13/stdlib.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/sha256.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/include/picotool_mbedtls_config.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/ecdsa.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/ecp.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/bignum.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/md.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/platform_util.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/platform_time.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/ctr_drbg.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/aes.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/entropy.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/sha512.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/pk.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/mbedtls/include/mbedtls/version.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/elf_file.h \
  /usr/include/c++/13/fstream \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/elf.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/addresses.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/bintool/metadata.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf2uf2/elf2uf2.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_usb_reset_interface_headers/include/pico/usb_reset_interface.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf/elf.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/otp.h \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/elf.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/addresses.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/bintool/metadata.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf2uf2/elf2uf2.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_usb_reset_interface_headers/include/pico/usb_reset_interface.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf/elf.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/otp.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp \
  /usr/include/c++/13/cstddef /usr/include/c++/13/forward_list \
  /usr/include/c++/13/bits/forward_list.h \
  /usr/include/c++/13/bits/forward_list.tcc \
@@ -307,8 +332,8 @@ CMakeFiles/picotool.dir/main.cpp.o: \
  /usr/include/c++/13/bits/gslice_array.h \
  /usr/include/c++/13/bits/mask_array.h \
  /usr/include/c++/13/bits/indirect_array.h /usr/include/c++/13/version \
- /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/errors/errors.h \
- /home/duckmadeofwood/Desktop/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/otp_data.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/errors/errors.h \
+ /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/otp_data.h \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
  /usr/include/x86_64-linux-gnu/asm/ioctls.h \

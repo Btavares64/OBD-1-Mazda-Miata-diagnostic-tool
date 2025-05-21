@@ -1,16 +1,14 @@
 #include <stdio.h>
-#include <time.h>
-//#include "pico/stdlib.h" // pico sdk library
-#include <string.h>
-#include <unistd.h>
+#include "pico/stdlib.h" 
+#include "instructions.h"	// for the instructions file
 
 /*
 Author: Brandon Tavares
 */
 
 // ######### GLOABAL VARIABLE DECLARATION ##############
-
-
+#define ENGINE_RESET 16
+#define ON 17
 
 // ######### FUNCTION PROTOTYPES #######################
 
@@ -27,17 +25,25 @@ void clearTerminal();
 int main()
 {
     // ######### INTILIZE PINS ##############
+    stdio_init_all();
+
+    gpio_init(ENGINE_RESET);
+    gpio_set_dir(ENGINE_RESET, GPIO_OUT);
+
+    gpio_init(ON);	// TEST
+    gpio_set_dir(ON, GPIO_OUT);
 
 
     // ######### INTRODUCTION AND USER SELECTION ##############
-    
-    // clear previous terminal commands to make it easier to read
-    clearTerminal();
+    gpio_put(ON, 1);	// Verify that the program has ran succesfully
+
 
     char userInput; // user input
-    
-    //stdio_init_all();
-    
+   
+    printf("#########################################\n");
+    printf("# NA Miata Diagnostics Tool Version 1.0 #\n");
+    printf("#########################################\n\n");
+ 
     printf("1. Scan Engine\n");
     printf("2. Scan Airbags\n");
     printf("3. About the Diagnostics Tool\n");
@@ -67,6 +73,7 @@ int main()
                 break;
             case '5':
                 printf("\nProgram End\n\n");
+	    gpio_put(ON, 0);
                 return 0;
             default:
                 printf("\nInvalid Entry\n\n");
@@ -112,28 +119,11 @@ Dependencies - about.txt file
 void aboutTool()
 {
 
-    // clear previous terminal commands to make it easier to read
-    clearTerminal();
-
-    // array to store the contents of the instructions file
-    char buffer[1024];
-    char input;
-    char ch;
-
-    FILE *document = fopen("instructions.txt", "r");
-
-    fgets(buffer, 1024, document); // store file contents into the buffer
-
-    // output document
-    while ((ch = fgetc(document)) != EOF)
+    // open instructions
+    for (unsigned int i = 0; i < instructions_txt_len; i++) 
     {
-        putchar(ch);
+        putchar(instructions_txt[i]);
     }
-
-    fclose(document); // close file
-    
-    // return back to menu
-    printf("\nEnter 1 to Return Back to Main Menu\n\n");
 
     // return to the menu
     while(input != '1')
@@ -161,7 +151,7 @@ void resetCode()
     printf("###################\n");
     
     printf("Keep termimal running while reseting code. Process may take up to 10 minutes.\n"); 
-
+    gpio_put(ENGINE_RESET, 1);
 //####################### TIMER ######################################################
 // update user every 30 seconds on the current wait time
     
@@ -169,7 +159,7 @@ void resetCode()
     
     while(timeKeep != 0)
     {
-        sleep (1);
+        sleep_ms(1000);
 	timeKeep--;
 
 	if (timeKeep % 30 == 0)
@@ -181,6 +171,8 @@ void resetCode()
 	}
  	
     }
+
+    gpio_put(ENGINE_RESET, 0);
 
     // clear previous terminal commands to make it easier to read
     clearTerminal();
