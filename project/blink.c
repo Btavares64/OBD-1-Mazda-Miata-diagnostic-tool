@@ -28,10 +28,19 @@ int main()
     stdio_init_all();
 
     gpio_init(ENGINE_RESET);
-    gpio_set_dir(ENGINE_RESET, GPIO_OUT);
+    gpio_set_dir(ENGINE_RESET, GPIO_OUT); 
 
-    gpio_init(ON);	// TEST
-    gpio_set_dir(ON, GPIO_OUT);
+    gpio_init(ON);	            
+    gpio_set_dir(ON, GPIO_OUT); // CONFIRM IF THE DEVICE IS ON
+
+    gpio_init(AIRBAG_TEST);             
+    gpio_set_dir(AIRBAG_TEST, GPIO_IN); // START AIRBAG DIAGNOSTICS 
+
+    gpio_init(ECU_TEST);             
+    gpio_set_dir(ECU_TEST, GPIO_IN); // START ECU DIAGNOSTICS 
+
+
+
 
 
     // ######### INTRODUCTION AND USER SELECTION ##############
@@ -86,6 +95,7 @@ int main()
         printf("5. Quit\n");
 
 	printf("\nPick: ");
+    
     }
     
     
@@ -106,7 +116,10 @@ void checkAirbags()
     // clear previous terminal commands to make it easier to read
     clearTerminal();
 
-    puts("\ncheck airbags has been successfully reached\n");
+    puts("\nReading in progress.... Dont not unplug device\n");
+
+    // I need to intilize a pin in order to start reading
+
 }
 
 /*
