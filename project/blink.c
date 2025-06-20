@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include "pico/stdlib.h" 
+#include "pico/stdlib.h"
+#include "stdbool.h"
+
 #include "instructions.h"	// for the instructions file
 
 /*
@@ -21,6 +23,8 @@ void aboutTool();
 void resetCode();
 
 void clearTerminal();
+
+void codeTranslation(int count, int fileId);
 
 int main()
 {
@@ -117,9 +121,37 @@ void checkAirbags()
     clearTerminal();
 
     puts("\nReading in progress.... Dont not unplug device\n");
-
+    
     // I need to intilize a pin in order to start reading
+    bool reading = gpio_get(AIRBAG_TEST);
 
+    reading = true;
+
+    int pulseCount = 0;		// track the blinks
+    
+    int duration = 0;		// find when blinking is done
+
+    while (reading)
+    {
+        if (!gpio_get(AIRBAG_TEST))
+	    {
+            // start count
+            duration++;
+            sleep_ms(1000);
+
+            if (duration > 4)
+            {
+                codeTranslation(pulseCount, 1);
+                reading = false;	// code has been read... stop reading	
+            }
+        }
+
+
+        // ############## IN PROGRESS ###############
+
+        // I need to figure out how to reset durationa nd increment pulse c
+        // ount
+    }
 }
 
 /*
@@ -200,4 +232,17 @@ void clearTerminal()
     printf("#########################################\n");
     printf("# NA Miata Diagnostics Tool Version 1.0 #\n");
     printf("#########################################\n\n");
+}
+
+
+void codeTranslation(int count, int fileId)
+{
+    if (fileId == 1)
+    {
+        puts("You are reading from the airbag module");
+    }
+    else if (fileId == 2)
+    {
+        puts("You are reading from the ECU"):
+    }
 }
