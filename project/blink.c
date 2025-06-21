@@ -112,7 +112,42 @@ void checkEngine()
     // clear previous terminal commands to make it easier to read
     clearTerminal();
 
-    puts("\ncheck engine has been successfully reached\n");
+    puts("\nReading in progress.... Dont not unplug device\n");
+
+
+    // I need to intilize a pin in order to start reading
+    bool reading = gpio_get(ECU_TEST);
+
+    reading = true;
+
+    int pulseCount = 0;		// track the blinks
+    
+    int duration = 0;		// find when blinking is done
+
+    while (reading)
+    {
+        if (!gpio_get(ECU_TEST))
+	    {
+            // start count
+            duration++;
+            sleep_ms(1000);
+
+            if (duration > 4)
+            {
+                codeTranslation(pulseCount, 1);
+                reading = false;	// code has been read... stop reading	
+            }
+        }
+        else
+        {
+            sleep_ms(1000);
+
+            duration = 0;
+
+            pulseCount++;
+        }
+    }
+
 }
 
 void checkAirbags()
@@ -145,12 +180,14 @@ void checkAirbags()
                 reading = false;	// code has been read... stop reading	
             }
         }
+        else
+        {
+            sleep_ms(1000);
 
+            duration = 0;
 
-        // ############## IN PROGRESS ###############
-
-        // I need to figure out how to reset durationa nd increment pulse c
-        // ount
+            pulseCount++;
+        }
     }
 }
 
@@ -198,7 +235,7 @@ void resetCode()
     printf("Keep termimal running while reseting code. Process may take up to 10 minutes.\n"); 
     gpio_put(ENGINE_RESET, 1);
 //####################### TIMER ######################################################
-// update user every 30 seconds on the current wait time
+    // update user every 30 seconds on the current wait time
     
     int timeKeep = 600;
     
