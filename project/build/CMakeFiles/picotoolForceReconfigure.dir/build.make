@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project
+CMAKE_SOURCE_DIR = /home/duckmadeofwood/Desktop/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build
+CMAKE_BINARY_DIR = /home/duckmadeofwood/Desktop/project/build
 
 # Utility rule file for picotoolForceReconfigure.
 
@@ -67,7 +67,7 @@ include CMakeFiles/picotoolForceReconfigure.dir/compiler_depend.make
 include CMakeFiles/picotoolForceReconfigure.dir/progress.make
 
 CMakeFiles/picotoolForceReconfigure:
-	/usr/bin/cmake -E touch_nocreate /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/CMakeLists.txt
+	/usr/bin/cmake -E touch_nocreate /home/duckmadeofwood/Desktop/project/CMakeLists.txt
 
 picotoolForceReconfigure: CMakeFiles/picotoolForceReconfigure
 picotoolForceReconfigure: CMakeFiles/picotoolForceReconfigure.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/picotoolForceReconfigure.dir/clean:
 .PHONY : CMakeFiles/picotoolForceReconfigure.dir/clean
 
 CMakeFiles/picotoolForceReconfigure.dir/depend:
-	cd /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/CMakeFiles/picotoolForceReconfigure.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/duckmadeofwood/Desktop/project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duckmadeofwood/Desktop/project /home/duckmadeofwood/Desktop/project /home/duckmadeofwood/Desktop/project/build /home/duckmadeofwood/Desktop/project/build /home/duckmadeofwood/Desktop/project/build/CMakeFiles/picotoolForceReconfigure.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/picotoolForceReconfigure.dir/depend
 

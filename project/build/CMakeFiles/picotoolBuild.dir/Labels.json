@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/CMakeFiles/picotoolBuild"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/CMakeFiles/picotoolBuild"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/CMakeFiles/picotoolBuild.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/CMakeFiles/picotoolBuild.rule"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/CMakeFiles/picotoolBuild-complete.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/CMakeFiles/picotoolBuild-complete.rule"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule"
 		},
 		{
-			"file" : "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule"
+			"file" : "/home/duckmadeofwood/Desktop/project/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule"
 		}
 	],
 	"target" : 

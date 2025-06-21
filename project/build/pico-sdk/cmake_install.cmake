@@ -1,4 +1,4 @@
-# Install script for directory: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk
+# Install script for directory: /home/duckmadeofwood/Desktop/pico-sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/duckmadeofwood/Desktop/project/build/pico-sdk/tools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/duckmadeofwood/Desktop/project/build/pico-sdk/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/duckmadeofwood/Desktop/project/build/pico-sdk/docs/cmake_install.cmake")
 endif()
 

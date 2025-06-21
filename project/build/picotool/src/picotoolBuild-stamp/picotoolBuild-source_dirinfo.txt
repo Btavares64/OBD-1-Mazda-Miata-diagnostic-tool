@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src
+source_dir=/home/duckmadeofwood/Desktop/project/build/_deps/picotool-src
 work_dir=
 

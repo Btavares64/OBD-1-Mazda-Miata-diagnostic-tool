@@ -1,4 +1,4 @@
-# Install script for directory: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_crt0
+# Install script for directory: /home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_crt0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

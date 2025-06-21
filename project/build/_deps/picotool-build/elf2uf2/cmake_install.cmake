@@ -1,8 +1,8 @@
-# Install script for directory: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps/picotool-src/elf2uf2
+# Install script for directory: /home/duckmadeofwood/Desktop/project/build/_deps/picotool-src/elf2uf2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/_deps")
+  set(CMAKE_INSTALL_PREFIX "/home/duckmadeofwood/Desktop/project/build/_deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

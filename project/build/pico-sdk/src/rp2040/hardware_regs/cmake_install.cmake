@@ -1,4 +1,4 @@
-# Install script for directory: /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/hardware_regs
+# Install script for directory: /home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/hardware_regs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

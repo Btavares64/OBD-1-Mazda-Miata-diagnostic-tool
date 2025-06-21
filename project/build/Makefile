@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project
+CMAKE_SOURCE_DIR = /home/duckmadeofwood/Desktop/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build
+CMAKE_BINARY_DIR = /home/duckmadeofwood/Desktop/project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/CMakeFiles /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/duckmadeofwood/Desktop/project/build/CMakeFiles /home/duckmadeofwood/Desktop/project/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/duckmadeofwood/Desktop/project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,32 +128,6 @@ blink: cmake_check_build_system
 blink/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/build
 .PHONY : blink/fast
-
-#=============================================================================
-# Target rules for targets named picotoolForceReconfigure
-
-# Build rule for target.
-picotoolForceReconfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolForceReconfigure
-.PHONY : picotoolForceReconfigure
-
-# fast build rule for target.
-picotoolForceReconfigure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolForceReconfigure.dir/build.make CMakeFiles/picotoolForceReconfigure.dir/build
-.PHONY : picotoolForceReconfigure/fast
-
-#=============================================================================
-# Target rules for targets named picotoolBuild
-
-# Build rule for target.
-picotoolBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolBuild
-.PHONY : picotoolBuild
-
-# fast build rule for target.
-picotoolBuild/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolBuild.dir/build.make CMakeFiles/picotoolBuild.dir/build
-.PHONY : picotoolBuild/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -244,1773 +218,1173 @@ blink.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/blink.c.s
 .PHONY : blink.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.o: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.i: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.s: home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_divider/divider.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.o
 
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_divider/divider.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.o
-
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_crt0/crt0.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_crt0/crt0.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.o
-
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o
-
-# target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o
 
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.o
-
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i
-
-# target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
-
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s
-
-# target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o
 
 # target to build an object file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
 
 # target to preprocess a source file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
 
 # target to generate assembly for a file
-home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-.PHONY : home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+.PHONY : home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 # Help Target
 help:
@@ -2022,8 +1396,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
-	@echo "... picotoolBuild"
-	@echo "... picotoolForceReconfigure"
 	@echo "... pioasmBuild"
 	@echo "... blink"
 	@echo "... bs2_default"
@@ -2031,227 +1403,152 @@ help:
 	@echo "... blink.o"
 	@echo "... blink.i"
 	@echo "... blink.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/class/video/video_device.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/lib/tinyusb/src/tusb.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/hardware_claim/claim.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/critical_section.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/lock_core.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/mutex.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_sync/sem.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/time.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_time/timeout_helper.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/datetime.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/pheap.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/common/pico_util/queue.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2040/pico_platform/platform.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_divider/divider.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_flash/flash.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_pll/pll.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync/sync.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_ticks/ticks.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_timer/timer.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_uart/uart.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_vreg/vreg.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_atomic/atomic.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_crt0/crt0.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_math.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_flash/flash.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_math.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_malloc/malloc.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_platform_panic/panic.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_printf/printf.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
-	@echo "... home/duckmadeofwood/Desktop/OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/hardware_claim/claim.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/critical_section.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/lock_core.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/mutex.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_sync/sem.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/time.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_time/timeout_helper.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/datetime.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/pheap.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2040/pico_platform/platform.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_divider/divider.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_pll/pll.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync/sync.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_ticks/ticks.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_timer/timer.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_uart/uart.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_vreg/vreg.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_atomic/atomic.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_crt0/crt0.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_math.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_flash/flash.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_math.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_malloc/malloc.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_platform_panic/panic.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_printf/printf.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
+	@echo "... home/duckmadeofwood/Desktop/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
 .PHONY : help
 
 
