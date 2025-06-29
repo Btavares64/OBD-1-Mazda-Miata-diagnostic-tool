@@ -6,9 +6,7 @@
 
 // ######### FUNCTION PROTOTYPES #######################
 
-void checkEngine();
-
-void checkAirbags();
+void codeRead();
 
 void aboutTool();
 
@@ -43,6 +41,8 @@ int main()
     clearTerminal();
 
     char userInput; // user input
+
+    int blinkCount = 0;
     
     printf("1. Scan Engine\n");
     printf("2. Scan Airbags\n");
@@ -60,10 +60,12 @@ int main()
         switch (userInput)
         {
             case '1':
-                checkEngine();
+                blinkCount = codeRead();
+                codeTranslation(blinkCount, 2);
                 break;
             case '2':
-                checkAirbags();
+                blinkCount = codeRead();
+                codeTranslation(blinkCount, 2);
                 break;
             case '3':
                 aboutTool();
@@ -84,16 +86,15 @@ int main()
         printf("4. Reset Engine Code\n");
         printf("5. Quit\n");
 
-	printf("\nPick: ");
+	    printf("\nPick: ");
     
     }
-    
-    
+     
     return 0;
 }
 
-// ######### FUNCTION IMPLEMENTATION ##############
-void checkEngine()
+
+void codeRead()
 {
     // clear previous terminal commands to make it easier to read
     clearTerminal();
@@ -134,47 +135,6 @@ void checkEngine()
         }
     }
 
-}
-
-void checkAirbags()
-{
-    // clear previous terminal commands to make it easier to read
-    clearTerminal();
-
-    puts("\nReading in progress.... Dont not unplug device\n");
-    
-    // I need to intilize a pin in order to start reading
-    bool reading = gpio_get(AIRBAG_TEST);
-
-    reading = true;
-
-    int pulseCount = 0;		// track the blinks
-    
-    int duration = 0;		// find when blinking is done
-
-    while (reading)
-    {
-        if (!gpio_get(AIRBAG_TEST))
-	    {
-            // start count
-            duration++;
-            sleep_ms(1000);
-
-            if (duration > 4)
-            {
-                codeTranslation(pulseCount, 1);
-                reading = false;	// code has been read... stop reading	
-            }
-        }
-        else
-        {
-            sleep_ms(1000);
-
-            duration = 0;
-
-            pulseCount++;
-        }
-    }
 }
 
 /*
