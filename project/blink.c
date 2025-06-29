@@ -4,6 +4,13 @@
 #include "instructions.h"	// for the instructions file
 #include <string.h>
 
+
+#define ON 17
+#define READ_CODE 16
+#define ENGINE_RESET 18
+#define ECU_TEST 19
+
+
 // ######### FUNCTION PROTOTYPES #######################
 
 void codeRead();
@@ -21,22 +28,23 @@ int main()
     // ######### INTILIZE PINS ##############
     stdio_init_all();
 
-    gpio_init(ENGINE_RESET);
-    gpio_set_dir(ENGINE_RESET, GPIO_OUT); 
-
     gpio_init(ON);	            
     gpio_set_dir(ON, GPIO_OUT); // CONFIRM IF THE DEVICE IS ON
 
-    gpio_init(AIRBAG_TEST);             
-    gpio_set_dir(AIRBAG_TEST, GPIO_IN); // START AIRBAG DIAGNOSTICS 
+    gpio_init(READ_CODE);             
+    gpio_set_dir(AIRBAG_TEST, GPIO_IN); // START DIAGNOSTICS 
 
     gpio_init(ECU_TEST);             
-    gpio_set_dir(ECU_TEST, GPIO_IN); // START ECU DIAGNOSTICS 
+    gpio_set_dir(ECU_TEST, GPIO_IN); // COUNT BLINKS
 
-
+    gpio_init(ENGINE_RESET);             
+    gpio_set_dir(ENGINE_RESET, GPIO_IN); // RESET ENGINE
 
     // ######### INTRODUCTION AND USER SELECTION ##############
+
     
+    gpio_get(ON, 1);
+
     // clear previous terminal commands to make it easier to read
     clearTerminal();
 
@@ -75,6 +83,7 @@ int main()
                 break;
             case '5':
                 printf("\nProgram End\n\n");
+                gpio_get(ON, 0);
                 return 0;
             default:
                 printf("\nInvalid Entry\n\n");
@@ -197,6 +206,9 @@ void resetCode()
     
     printf("Keep termimal running while reseting code. Process may take up to 10 minutes.\n"); 
 
+    gpio_get(ENGINE_RESET, 1);
+
+
 //####################### TIMER ######################################################
     // update user every 30 seconds on the current wait time
     
@@ -207,16 +219,17 @@ void resetCode()
         sleep (1);
 	    timeKeep--;
 
-	if (timeKeep % 30 == 0)
-	{
-	    int minutes = timeKeep / 60;
-        int seconds = timeKeep % 60;
+        if (timeKeep % 30 == 0)
+        {
+            int minutes = timeKeep / 60;
+            int seconds = timeKeep % 60;
 
-	    printf("\n%d:%02d remaining....\n\n", minutes, seconds);
-	}
+            printf("\n%d:%02d remaining....\n\n", minutes, seconds);
+        }
  	
     }
 
+    gpio_get(ENGINE_RESET, 0);  //stop signal
     // clear previous terminal commands to make it easier to read
     clearTerminal();
 
