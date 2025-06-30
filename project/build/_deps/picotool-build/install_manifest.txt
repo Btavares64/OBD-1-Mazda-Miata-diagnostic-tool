@@ -1,5 +1,0 @@
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool/picotool
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool/picotoolTargets.cmake
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool/picotoolTargets-release.cmake
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool/picotoolConfig.cmake
-/home/duckmadeofwood/Desktop/project/build/_deps/picotool/picotoolConfigVersion.cmake

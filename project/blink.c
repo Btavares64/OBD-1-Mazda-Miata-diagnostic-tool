@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "stdbool.h"
-#include "instructions.h"	// for the instructions file
 #include <string.h>
 
 
@@ -13,7 +12,7 @@
 
 // ######### FUNCTION PROTOTYPES #######################
 
-void codeRead();
+int codeRead();
 
 void aboutTool();
 
@@ -32,7 +31,7 @@ int main()
     gpio_set_dir(ON, GPIO_OUT); // CONFIRM IF THE DEVICE IS ON
 
     gpio_init(READ_CODE);             
-    gpio_set_dir(AIRBAG_TEST, GPIO_IN); // START DIAGNOSTICS 
+    gpio_set_dir(READ_CODE, GPIO_IN); // START DIAGNOSTICS 
 
     gpio_init(ECU_TEST);             
     gpio_set_dir(ECU_TEST, GPIO_IN); // COUNT BLINKS
@@ -41,9 +40,14 @@ int main()
     gpio_set_dir(ENGINE_RESET, GPIO_IN); // RESET ENGINE
 
     // ######### INTRODUCTION AND USER SELECTION ##############
-
     
-    gpio_get(ON, 1);
+    gpio_put(ON, 1);
+
+    // start program when minicom is open
+    while(!stdio_usb_connected())
+    {
+        sleep_ms(100);
+    }
 
     // clear previous terminal commands to make it easier to read
     clearTerminal();
@@ -83,7 +87,7 @@ int main()
                 break;
             case '5':
                 printf("\nProgram End\n\n");
-                gpio_get(ON, 0);
+                gpio_put(ON, 0);
                 return 0;
             default:
                 printf("\nInvalid Entry\n\n");
@@ -103,7 +107,7 @@ int main()
 }
 
 
-void codeRead()
+int codeRead()
 {
     // clear previous terminal commands to make it easier to read
     clearTerminal();
@@ -144,38 +148,31 @@ void codeRead()
         }
     }
 
+    // need to return the count
+    return pulseCount;
 }
 
 /*
-
 aboutTool - function will assist users on the process of utilizing this
 diagnostics tool.
-
-Dependencies - about.txt file
 */
 void aboutTool()
 {
+    // instruction manual
+    printf("\n##############################\n"
+       "# How To Use Diagnostic Tool #\n"
+       "##############################\n\n"
+       "~~ This isn't final instruction guide ~~\n\n"
+       "Getting Started:\n\n"
+       "- In order to get started you plug in your device, once plugged in, turn your\n"
+       "  key into accessory mode\n\n"
+       "- Open your terminal and interact with the interface to get to the appropriate setting\n\n"
+       "Code Reset:\n\n"
+       "- Allow the system 10 minutes in order to reset the engine code\n\n");
 
-    // clear previous terminal commands to make it easier to read
-    clearTerminal();
-
-    // array to store the contents of the instructions file
-    char buffer[1024];
-    char input;
-    char ch;
-
-    FILE *document = fopen("instructions.txt", "r");
-
-    fgets(buffer, 1024, document); // store file contents into the buffer
-
-    // output document
-    while ((ch = fgetc(document)) != EOF)
-    {
-        putchar(ch);
-    }
-
-    fclose(document); // close file
     
+
+    char input;
     // return back to menu
     printf("\nEnter 1 to Return Back to Main Menu\n\n");
 
@@ -185,9 +182,9 @@ void aboutTool()
         scanf (" %c", &input);
  
         if (input != '1')
-	{
-	    printf("\nInvalid Entry, Enter 1 to Return Back to Main Menu\n\n");
-	}
+        {
+            printf("\nInvalid Entry, Enter 1 to Return Back to Main Menu\n\n");
+        }
     }
 
     clearTerminal();
@@ -206,7 +203,7 @@ void resetCode()
     
     printf("Keep termimal running while reseting code. Process may take up to 10 minutes.\n"); 
 
-    gpio_get(ENGINE_RESET, 1);
+    gpio_put(ENGINE_RESET, 1);
 
 
 //####################### TIMER ######################################################
@@ -216,7 +213,7 @@ void resetCode()
     
     while(timeKeep != 0)
     {
-        sleep (1);
+        sleep_ms(1000);
 	    timeKeep--;
 
         if (timeKeep % 30 == 0)
@@ -229,7 +226,7 @@ void resetCode()
  	
     }
 
-    gpio_get(ENGINE_RESET, 0);  //stop signal
+    gpio_put(ENGINE_RESET, 0);  //stop signal
     // clear previous terminal commands to make it easier to read
     clearTerminal();
 
@@ -254,6 +251,6 @@ void codeTranslation(int count, int fileId)
     }
     else if (fileId == 2)
     {
-        puts("You are reading from the ECU"):
+        puts("You are reading from the ECU");
     }
 }
