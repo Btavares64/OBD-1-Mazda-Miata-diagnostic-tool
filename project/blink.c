@@ -11,7 +11,7 @@
 
 // ########## DICTIONARY TO HANDLE CODES ###############
 
-typedef stuct Dictionary 
+typedef struct Dictionary 
 {
     int key;
     int fileID; 
