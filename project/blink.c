@@ -114,49 +114,42 @@ int main()
     return 0;
 }
 
-
 int codeRead()
 {
-    // clear previous terminal commands to make it easier to read
     clearTerminal();
-
+    
     puts("\nReading in progress.... Dont not unplug device\n");
-
 
     // I need to intilize a pin in order to start reading
     bool reading = gpio_get(ECU_TEST);
 
-    reading = true;
+    int timeKeep = 5;
+    int tens = 0;
+    int ones = 0;
 
-    int pulseCount = 0;		// track the blinks
-    
-    int duration = 0;		// find when blinking is done
-
-    while (reading)
+    while(timeKeep != 0)
     {
         if (!gpio_get(ECU_TEST))
-	    {
-            // start count
-            duration++;
-            sleep_ms(1000);
-
-            if (duration > 4)
-            {
-                reading = false;	// code has been read... stop reading	
-            }
-        }
-        else
         {
             sleep_ms(1000);
+	        timeKeep--;
 
-            duration = 0;
-
-            pulseCount++;
+            if (timeKeep == 4)
+            {
+                tens += 10;
+            }
+            else if (timeKeep == 1)
+            {
+                ones += 1;
+            }
+        }
+        else 
+        {
+            timeKeep = 5;
         }
     }
-
     // need to return the count
-    return pulseCount;
+    return tens + ones;
 }
 
 /*
