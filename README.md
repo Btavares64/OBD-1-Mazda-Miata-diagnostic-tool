@@ -20,9 +20,19 @@ Clone Repository by running
 git clone https://github.com/Btavares64/OBD-1-Mazda-Miata-diagnostic-tool.git
 ```
 
-Go to pico-sdk directory by simply running
+Go to project directory
 ```
-cd OBD-1-Mazda-Miata-diagnostic-tool/pico-sdk
+cd OBD-1-Mazda-Miata-diagnostic-tool
+```
+
+Clone pico-sdk library
+```
+git clone https://github.com/raspberrypi/pico-sdk.git
+```
+
+Go to pico-sdk directory
+```
+cd pico-sdk
 ```
 
 Run 
