@@ -47,7 +47,7 @@ cd ..
 
 Change Directory to the projects folder
 ```
-cd projects
+cd project
 ```
 
 Install the nessesary packages in order to run the program
