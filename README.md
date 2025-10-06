@@ -50,9 +50,9 @@ Next you to exit pico-sdk by running
 cd ..
 ```
 
-Change Directory to the projects folder
+Change Directory to the src folder
 ```
-cd project
+cd src
 ```
 
 Install the nessesary packages in order to run the program
