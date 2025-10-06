@@ -30,6 +30,11 @@ Clone pico-sdk library
 git clone https://github.com/raspberrypi/pico-sdk.git
 ```
 
+Clone Free RTOS library
+```
+git clone https://github.com/FreeRTOS/FreeRTOS-Kernel
+```
+
 Go to pico-sdk directory
 ```
 cd pico-sdk
@@ -45,9 +50,9 @@ Next you to exit pico-sdk by running
 cd ..
 ```
 
-Change Directory to the projects folder
+Change Directory to the src folder
 ```
-cd project
+cd src
 ```
 
 Install the nessesary packages in order to run the program

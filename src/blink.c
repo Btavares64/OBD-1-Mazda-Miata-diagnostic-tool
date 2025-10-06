@@ -1,7 +1,13 @@
+// INCLUDE C STANDARD LIBRARIES
 #include <stdio.h>
-#include "pico/stdlib.h"
-#include "stdbool.h"
 #include <string.h>
+#include <stdbool.h>
+#include <string.h>
+
+// INCLUDE .H FILES
+#include "pico/stdlib.h"
+#include "FreeRTOSConfig.h"
+#include "task.h"
 
 #define ON 17
 #define READ_CODE 16
@@ -20,15 +26,15 @@ typedef struct Dictionary
 
 // ######### FUNCTION PROTOTYPES #######################
 
-int codeRead();
+int codeReadTask();
 
-void aboutTool();
+void loadSoftwareInstructions();
 
-void resetCode();
+void resetCodeTask();
 
-void clearTerminal();
+void clearTerminalTask();
 
-int codeTranslation(int count, int fileId);
+int codeTranslationTask(int count, int fileId);
 
 int main()
 {
@@ -88,7 +94,7 @@ int main()
                 codeTranslation(blinkCount, 200);
                 break;
             case '3':
-                aboutTool();
+                loadSoftwareInstructions();
                 break;
             case '4':
                 resetCode();
@@ -114,7 +120,7 @@ int main()
     return 0;
 }
 
-int codeRead()
+int codeReadTask()
 {
     clearTerminal();
     
@@ -153,10 +159,10 @@ int codeRead()
 }
 
 /*
-aboutTool - function will assist users on the process of utilizing this
+loadSoftwareInstructions - function will assist users on the process of utilizing this
 diagnostics tool.
 */
-void aboutTool()
+void loadSoftwareInstructions()
 {
     // instruction manual
     printf("\n##############################\n"
@@ -164,9 +170,11 @@ void aboutTool()
        "##############################\n\n"
        "~~ This isn't final instruction guide ~~\n\n"
        "Getting Started:\n\n"
-       "- In order to get started you plug in your device, once plugged in, turn your\n"
+       "- In order to get started you plug in your device, once plugged in, turn 
+       your\n"
        "  key into accessory mode\n\n"
-       "- Open your terminal and interact with the interface to get to the appropriate setting\n\n"
+       "- Open your terminal and interact with the interface to get to the 
+       appropriate setting\n\n"
        "Code Reset:\n\n"
        "- Allow the system 10 minutes in order to reset the engine code\n\n");
 
@@ -190,10 +198,10 @@ void aboutTool()
     clearTerminal();
 }
 
-void resetCode()
+void resetCodeTask()
 {
 
-//################# USER NOTICE WHILE RESETING CODE ##############################
+//################# USER NOTICE WHILE RESETING CODE ############################
    
     // clear previous terminal commands to make it easier to read
     clearTerminal();
@@ -201,12 +209,13 @@ void resetCode()
     printf("\n IMPORTANT NOTICE\n");
     printf("###################\n");
     
-    printf("Keep termimal running while reseting code. Process may take up to 10 minutes.\n"); 
+    printf("Keep termimal running while reseting code. Process may take up to 10
+         minutes.\n"); 
 
     gpio_put(ENGINE_RESET, 1);
 
 
-//####################### TIMER ######################################################
+//####################### TIMER ################################################
     // update user every 30 seconds on the current wait time
     
     int timeKeep = 600;
@@ -233,9 +242,10 @@ void resetCode()
     printf("\nEngine Codes Cleared.\n\n");
 }
 
-void clearTerminal()
+void clearTerminalTask()
 {
-    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+        \n\n\n\n\n\n\n\n\n\n\n\n\n");
 
     printf("#########################################\n");
     printf("# NA Miata Diagnostics Tool Version 1.0 #\n");
@@ -243,11 +253,11 @@ void clearTerminal()
 }
 
 
-int codeTranslation(int count, int fileId)
+int codeTranslationTask(int count, int fileId)
 {
     // ENGINE = 100 AIRBAG = 200
 
-    // ################## ERROR CODES #####################################################
+    // ################## ERROR CODES ##########################################
 
     dict ecuDiagnostics[] = {
         {1, 100, "Ignition pulse (No Igf signal)"},
@@ -265,19 +275,22 @@ int codeTranslation(int count, int fileId)
     };
 
     dict airbagDiagnostics[] = {
-        {101, 200, "*Faulty Diagnostic Module\n*Poor Connection Of Diagnostic Module Connector"},
+        {101, 200, "*Faulty Diagnostic Module\n*Poor Connection Of Diagnostic 
+            Module Connector"},
         {3,   200, "*Open Circuit\n*Poor Connection of Power Source Circuit"},
         {5,   200, "*Faulty Front Impact Sensor"},
         {10,  200, "*Faulty Diagnostic Module"},
         {4,   200, "*Faulty Rear safing Sensor"},
-        {6,   200, "*Faulty Air Bag Module\n*Poor Connection Of Clockspring Connector"},
+        {6,   200, "*Faulty Air Bag Module\n*Poor Connection Of Clockspring 
+            Connector"},
         {7,   200, "*Poor Wiring Harness Ground"},
         {8,   200, "*Poor Ground Of Front Impact Sensor"},
-        {9,   200, "*Open Circuit Between Diagnostic Module and Front Impact Sensor"},
+        {9,   200, "*Open Circuit Between Diagnostic Module and Front Impact 
+            Sensor"},
         {2,   200, "*Poor Ground Of All Front Impact Sensors"}
     };
 
-    // ############# OUTPUT CODE ############################################################
+    // ############# OUTPUT CODE ###############################################
     if (fileId == 100)
     {
         for (int i = 0; i < sizeof(ecuDiagnostics) / sizeof(ecuDiagnostics[0]); i++)
@@ -287,6 +300,12 @@ int codeTranslation(int count, int fileId)
                 printf("%s ", ecuDiagnostics[i].value);
 
                 return 0;
+            }
+            // CREATE ERROR CASE IF READING DOESNT WORK. GOOD FOR DEBUGGING :)
+            else
+            {
+                printf("\nERROR OCCOURS WHILE PROCESSING ENGINE CODE...\n
+                        PLEASE TRY AGAIN.\n");
             }
         }
     }
@@ -299,6 +318,12 @@ int codeTranslation(int count, int fileId)
                 printf("%s ", airbagDiagnostics[i].value);
 
                 return 0;
+            }
+            // CREATE ERROR CASE IF READING DOESNT WORK. GOOD FOR DEBUGGING :)
+            else
+            {
+                printf("\nERROR OCCOURS WHILE PROCESSING AIRBAG CODE...\n
+                        PLEASE TRY AGAIN.\n");
             }
         }
     }
