@@ -1,40 +1,5 @@
-// INCLUDE C STANDARD LIBRARIES
-#include <stdio.h>
-#include <string.h>
-#include <stdbool.h>
-#include <string.h>
-
-// INCLUDE .H FILES
-#include "pico/stdlib.h"
-#include "FreeRTOSConfig.h"
-#include "task.h"
-
-#define ON 17
-#define READ_CODE 16
-#define ENGINE_RESET 18
-#define ECU_TEST 19
-#define MAX_SIZE 50
-
-// ########## DICTIONARY TO HANDLE CODES ###############
-
-typedef struct Dictionary 
-{
-    int key;
-    int fileID; 
-    char value[MAX_SIZE]; 
-} dict;
-
-// ######### FUNCTION PROTOTYPES #######################
-
-int codeReadTask();
-
-void loadSoftwareInstructions();
-
-void resetCodeTask();
-
-void clearTerminalTask();
-
-int codeTranslationTask(int count, int fileId);
+// INCLUDE THE H FILE 
+#include "blink.h"
 
 int main()
 {
@@ -64,56 +29,55 @@ int main()
     }
 
     // clear previous terminal commands to make it easier to read
-    clearTerminal();
+    clearTerminalTask();
 
     char userInput; // user input
 
     int blinkCount = 0;
     
-    printf("1. Scan Engine\n");
-    printf("2. Scan Airbags\n");
-    printf("3. About the Diagnostics Tool\n");
-    printf("4. Reset Engine Code\n");
-    printf("5. Quit\n");
+    std::cout << "1. Scan Engine\n";
+    std::cout << "2. Scan Airbags\n";
+    std::cout << "3. About the Diagnostics Tool\n";
+    std::cout << "4. Reset Engine Code\n";
+    std::cout << "5. Quit\n";
 
-    printf("\nPick: ");
+    std::cout << "\nPick: ";
 
     while (userInput != '5')
     {
-        scanf(" %c", &userInput);
+        std::cin >> userInput;
 
         // This switch case will handle user selection
         switch (userInput)
         {
             case '1':
-                blinkCount = codeRead();
-                codeTranslation(blinkCount, 100);
+                blinkCount = codeReadTask();
+                codeTranslationTask(blinkCount, 100);
                 break;
             case '2':
-                blinkCount = codeRead();
-                codeTranslation(blinkCount, 200);
+                blinkCount = codeReadTask();
+                codeTranslationTask(blinkCount, 200);
                 break;
             case '3':
                 loadSoftwareInstructions();
                 break;
             case '4':
-                resetCode();
+                resetCodeTask();
                 break;
             case '5':
-                printf("\nProgram End\n\n");
+                std::cout << "\nProgram End\n\n";
                 gpio_put(ON, 0);
                 return 0;
             default:
-                printf("\nInvalid Entry\n\n");
+                std::cout << "\nInvalid Entry\n\n";
         }
-        
-        printf("1. Scan Engine\n");
-        printf("2. Scan Airbags\n");
-        printf("3. About the Diagnostics Tool\n");
-        printf("4. Reset Engine Code\n");
-        printf("5. Quit\n");
+        std::cout << "1. Scan Engine\n";
+        std::cout << "2. Scan Airbags\n";
+        std::cout << "3. About the Diagnostics Tool\n";
+        std::cout << "4. Reset Engine Code\n";
+        std::cout << "5. Quit\n";
 
-	    printf("\nPick: ");
+        std::cout << "\nPick: ";
     
     }
      
@@ -122,7 +86,7 @@ int main()
 
 int codeReadTask()
 {
-    clearTerminal();
+    clearTerminalTask();
     
     puts("\nReading in progress.... Dont not unplug device\n");
 
@@ -159,43 +123,45 @@ int codeReadTask()
 }
 
 /*
-loadSoftwareInstructions - function will assist users on the process of utilizing this
-diagnostics tool.
+loadSoftwareInstructions - function will assist users on the process of 
+utilizing this diagnostics tool.
 */
 void loadSoftwareInstructions()
 {
+    clearTerminalTask();
     // instruction manual
-    printf("\n##############################\n"
-       "# How To Use Diagnostic Tool #\n"
-       "##############################\n\n"
-       "~~ This isn't final instruction guide ~~\n\n"
-       "Getting Started:\n\n"
-       "- In order to get started you plug in your device, once plugged in, turn 
-       your\n"
-       "  key into accessory mode\n\n"
-       "- Open your terminal and interact with the interface to get to the 
-       appropriate setting\n\n"
-       "Code Reset:\n\n"
-       "- Allow the system 10 minutes in order to reset the engine code\n\n");
+    std::cout << "\n##############################\n";
+    std::cout << "# How To Use Diagnostic Tool #\n";
+    std::cout << "##############################\n\n";
+    std::cout << "~~ This isn't final instruction guide ~~\n\n";
+    std::cout << "Getting Started:\n\n";
+    std::cout << "- In order to get started you plug in your device, "; 
+    std::cout << "once plugged in, turn your\n";
+    std::cout << "  key into accessory mode\n\n";
+    std::cout << "- Open your terminal and interact with the interface to get ";
+    std::cout << "to the appropriate setting\n\n";
+    std::cout << "Code Reset:\n\n";
+    std::cout << "- Allow the system 10 minutes in order to reset the engine code\n\n";
 
     
 
     char input;
+
     // return back to menu
-    printf("\nEnter 1 to Return Back to Main Menu\n\n");
+    std::cout << "\nEnter 1 to Return Back to Main Menu\n\n";
 
     // return to the menu
     while(input != '1')
     {
-        scanf (" %c", &input);
+        std::cin >> input;
  
         if (input != '1')
         {
-            printf("\nInvalid Entry, Enter 1 to Return Back to Main Menu\n\n");
+            std::cout << "\nInvalid Entry, Enter 1 to Return Back to Main Menu\n\n";
         }
     }
 
-    clearTerminal();
+    clearTerminalTask();
 }
 
 void resetCodeTask()
@@ -204,13 +170,13 @@ void resetCodeTask()
 //################# USER NOTICE WHILE RESETING CODE ############################
    
     // clear previous terminal commands to make it easier to read
-    clearTerminal();
+    clearTerminalTask();
 
-    printf("\n IMPORTANT NOTICE\n");
-    printf("###################\n");
+    std::cout << "\n IMPORTANT NOTICE\n";
+    std::cout << "###################\n";
     
-    printf("Keep termimal running while reseting code. Process may take up to 10
-         minutes.\n"); 
+    std::cout << "Keep termimal running while reseting code. Process may take up";
+    std::cout << "to 10 minutes.\n"; 
 
     gpio_put(ENGINE_RESET, 1);
 
@@ -230,36 +196,39 @@ void resetCodeTask()
             int minutes = timeKeep / 60;
             int seconds = timeKeep % 60;
 
-            printf("\n%d:%02d remaining....\n\n", minutes, seconds);
+            std::cout << "\n" << minutes << ":";
+            if (seconds < 10)
+            {
+                std::cout << "0";    // add 0 when seconds is less than 0
+            }
+            std::cout << seconds << " remaining....\n\n";
         }
  	
     }
 
     gpio_put(ENGINE_RESET, 0);  //stop signal
 
-    clearTerminal();
+    clearTerminalTask();
 
-    printf("\nEngine Codes Cleared.\n\n");
+    std::cout << "\nEngine Codes Cleared.\n\n";
 }
 
 void clearTerminalTask()
 {
-    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
-        \n\n\n\n\n\n\n\n\n\n\n\n\n");
+    std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
 
-    printf("#########################################\n");
-    printf("# NA Miata Diagnostics Tool Version 1.0 #\n");
-    printf("#########################################\n\n");
+    std::cout << "#########################################\n";
+    std::cout << "# NA Miata Diagnostics Tool Version 1.0 #\n";
+    std::cout << "#########################################\n\n";
 }
 
-
-int codeTranslationTask(int count, int fileId)
+void codeTranslationTask(int count, int fileId)
 {
     // ENGINE = 100 AIRBAG = 200
 
     // ################## ERROR CODES ##########################################
 
-    dict ecuDiagnostics[] = {
+    Dictionary ecuDiagnostics[] = {
         {1, 100, "Ignition pulse (No Igf signal)"},
         {2, 100, "No Ne signal"},
         {3, 100, "No G signal"},
@@ -274,19 +243,16 @@ int codeTranslationTask(int count, int fileId)
         {34, 100, "ISC Valve"}
     };
 
-    dict airbagDiagnostics[] = {
-        {101, 200, "*Faulty Diagnostic Module\n*Poor Connection Of Diagnostic 
-            Module Connector"},
+    Dictionary airbagDiagnostics[] = {
+        {101, 200, "*Faulty Diagnostic Module\n*Poor Connection Of Diagnostic Module Connector"},
         {3,   200, "*Open Circuit\n*Poor Connection of Power Source Circuit"},
         {5,   200, "*Faulty Front Impact Sensor"},
         {10,  200, "*Faulty Diagnostic Module"},
         {4,   200, "*Faulty Rear safing Sensor"},
-        {6,   200, "*Faulty Air Bag Module\n*Poor Connection Of Clockspring 
-            Connector"},
+        {6,   200, "*Faulty Air Bag Module\n*Poor Connection Of Clockspring Connector"},
         {7,   200, "*Poor Wiring Harness Ground"},
         {8,   200, "*Poor Ground Of Front Impact Sensor"},
-        {9,   200, "*Open Circuit Between Diagnostic Module and Front Impact 
-            Sensor"},
+        {9,   200, "*Open Circuit Between Diagnostic Module and Front Impact Sensor"},
         {2,   200, "*Poor Ground Of All Front Impact Sensors"}
     };
 
@@ -297,15 +263,7 @@ int codeTranslationTask(int count, int fileId)
         {
             if (ecuDiagnostics[i].key == count && ecuDiagnostics[i].fileID == fileId)
             {
-                printf("%s ", ecuDiagnostics[i].value);
-
-                return 0;
-            }
-            // CREATE ERROR CASE IF READING DOESNT WORK. GOOD FOR DEBUGGING :)
-            else
-            {
-                printf("\nERROR OCCOURS WHILE PROCESSING ENGINE CODE...\n
-                        PLEASE TRY AGAIN.\n");
+                std::cout << ecuDiagnostics[i].value;
             }
         }
     }
@@ -315,17 +273,12 @@ int codeTranslationTask(int count, int fileId)
         {
             if (airbagDiagnostics[i].key == count && airbagDiagnostics[i].fileID == fileId)
             {
-                printf("%s ", airbagDiagnostics[i].value);
-
-                return 0;
-            }
-            // CREATE ERROR CASE IF READING DOESNT WORK. GOOD FOR DEBUGGING :)
-            else
-            {
-                printf("\nERROR OCCOURS WHILE PROCESSING AIRBAG CODE...\n
-                        PLEASE TRY AGAIN.\n");
+                std::cout << airbagDiagnostics[i].value;
             }
         }
     }
+    else
+    {
+        std::cout << "\nERROR OCCOURS WHILE PROCESSING ENGINE CODE...\n PLEASE TRY AGAIN.\n";
+    }
 }
-

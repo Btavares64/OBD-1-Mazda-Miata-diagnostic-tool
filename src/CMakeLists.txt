@@ -13,24 +13,8 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(blink
-        blink.c
+        blink.cpp
         )
-
-# Collect FreeRTOS source files
-file(GLOB FreeRTOS_src
-    ../FreeRTOS-Kernel/*.c
-    ../FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c
-    ../FreeRTOS-Kernel/portable/MemMang/heap_4.c
-)
-
-# Create static library for FreeRTOS
-add_library(FreeRTOS STATIC ${FreeRTOS_src})
-
-# Include FreeRTOS headers
-target_include_directories(FreeRTOS PUBLIC
-    ../FreeRTOS-Kernel/include
-    ../FreeRTOS-Kernel/portable/GCC/ARM_CM0
-)
 
 # Allow  Usb Communication
 pico_enable_stdio_usb(blink 1)
