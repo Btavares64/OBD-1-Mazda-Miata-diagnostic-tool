@@ -30,11 +30,6 @@ Clone pico-sdk library
 git clone https://github.com/raspberrypi/pico-sdk.git
 ```
 
-Clone Free RTOS library
-```
-git clone https://github.com/FreeRTOS/FreeRTOS-Kernel
-```
-
 Go to pico-sdk directory
 ```
 cd pico-sdk
