@@ -13,7 +13,7 @@ int main()
     gpio_set_dir(READ_CODE, GPIO_IN); // START DIAGNOSTICS 
 
     gpio_init(ECU_TEST);             
-    gpio_set_dir(ECU_TEST, GPIO_IN); // COUNT BLINKS
+    gpio_set_dir(ECU_TEST, GPIO_IN); // COUNT BLINKS 
 
     gpio_init(ENGINE_RESET);             
     gpio_set_dir(ENGINE_RESET, GPIO_IN); // RESET ENGINE
@@ -32,8 +32,11 @@ int main()
     clearTerminalTask();
 
     char userInput; // user input
-
     int blinkCount = 0;
+    int numOfValidCodes = 0;    // track valid code reads for parsing function
+    // allocate mem for array of codes if it exists
+    int* codeValues = nullptr; 
+                              
     
     std::cout << "1. Scan Engine\n";
     std::cout << "2. Scan Airbags\n";
@@ -51,12 +54,12 @@ int main()
         switch (userInput)
         {
             case '1':
-                blinkCount = codeReadTask();
-                codeTranslationTask(blinkCount, 100);
+                parsingTask(codeCount, numOfValidCodes);
+                codeTranslationTask(codeValues, numOfValidCodes, 100);
                 break;
             case '2':
-                blinkCount = codeReadTask();
-                codeTranslationTask(blinkCount, 200);
+                parsingTask(codeCount, numOfValidCodes);
+                codeTranslationTask(codeValues, numOfValidCodes, 200);
                 break;
             case '3':
                 loadSoftwareInstructions();
@@ -80,47 +83,120 @@ int main()
         std::cout << "\nPick: ";
     
     }
-     
+
+    /// deallocate mem
+    delete[] codeValues;
+
     return 0;
+}
+
+/*
+If the code is a two-digit number, the "tens" digit will be displayed first, 
+then for a short 1.6-second period the light will be dark, then the "ones" 
+digit will be displayed. This will repeat after a four-second dark pause. 
+If there are multiple codes, they will each be separated by a four-second 
+pause and may include two-digit codes, so pay attention.
+*/
+int parsingTask(int* codeValues, int &numOfValidCodes)
+{
+    clearTerminalTask();
+ 
+    int codeReadCount = 0; // keep track of code read count
+
+    // another contol mechanism to process all the error codes
+    bool control = true;
+    int tempVal = 0;    // store temp result before appending
+
+    std::cout << "\nReading in progress.... Dont not unplug device\n";
+
+    // WHAT NEEDS TO BE DONE
+    while (control)
+    {
+        // I need to call codereadtask twice
+        // I must append value into the array
+        tempVal = codeReadTask();
+
+        //append array
+        codeValues[codeReadCount] = tempVal;
+
+        // increment the code read count
+        codeReadCount++;
+
+        // I must check if the second value is not the same
+        if (codeReadCount > 1 && codeExists(codeValues, codeReadCount, tempVal))
+        {
+            control = false;
+        }
+    }
+
+    // add corrected value 
+    numOfValidCodes = codeReadCount -1;
+
+    // return sucess
+    return 0;
+}
+
+/*
+code exists function is to to deal with the multiple error code possibility
+this isa helper function of the codeReadTask(). 
+*/
+bool codeExists(int* codeValues, int codeReadCount, int tempVal) 
+{
+    for (int i = 0; i < codeReadCount; i++) 
+    {
+        if (codeValues[i] == tempVal)
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 int codeReadTask()
 {
-    clearTerminalTask();
-    
-    puts("\nReading in progress.... Dont not unplug device\n");
-
     // I need to intilize a pin in order to start reading
     bool reading = gpio_get(ECU_TEST);
 
-    int timeKeep = 5;
+    // control loop
+    bool control = true;
+
+    float timeKeep = 0.0;
     int tens = 0;
     int ones = 0;
+    int total = 0;
 
-    while(timeKeep != 0)
+    while (control) 
     {
-        if (!gpio_get(ECU_TEST))
-        {
-            sleep_ms(1000);
-	        timeKeep--;
+        reading = !gpio_get(ECU_TEST); // update every loop
 
-            if (timeKeep == 4)
+        if (reading) // signal is low
+        {                       
+            sleep_ms(100);
+            timeKeep += 0.1;                 // increment in seconds
+
+            if (timeKeep >= 1.6 && tens == 0) 
             {
                 tens += 10;
-            }
-            else if (timeKeep == 1)
+            } 
+            else if (timeKeep >= 1.0 && tens > 0 && ones == 0) 
             {
                 ones += 1;
+            } 
+            else if (timeKeep >= 4.0) 
+            {
+                total = tens + ones;
+                control = false;    // ends while loop
             }
-        }
+        } 
         else 
         {
-            timeKeep = 5;
+            timeKeep = 0; // reset if signal goes high
         }
     }
-    // need to return the count
-    return tens + ones;
+
+    return total;
 }
+
 
 /*
 loadSoftwareInstructions - function will assist users on the process of 
@@ -222,7 +298,7 @@ void clearTerminalTask()
     std::cout << "#########################################\n\n";
 }
 
-void codeTranslationTask(int count, int fileId)
+void codeTranslationTask(int* codeValues, int count, int fileId)
 {
     // ENGINE = 100 AIRBAG = 200
 

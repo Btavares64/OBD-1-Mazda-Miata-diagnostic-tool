@@ -10,6 +10,7 @@
 // ########### INCLUDE PICO RELATED LIBRARIES #########
 extern "C" {
     #include "pico/stdlib.h"
+    #include "hardware/adc.h"   // this will allo us to read voltage
 }
 
 
@@ -19,6 +20,7 @@ extern "C" {
 #define ENGINE_RESET 18
 #define ECU_TEST 19
 #define MAX_SIZE 1024
+#define MAX_CODE_READ 5
 
 // ########## DICTIONARY TO HANDLE CODES ###############
 class Dictionary
@@ -30,6 +32,10 @@ class Dictionary
 };
 
 // ######### FUNCTION PROTOTYPES #######################
+
+int parsingTask(int* codeValues, int &numOfValidCodes);
+
+bool codeExists(int* array, int codeReadCount, int tempVal);
 
 int codeReadTask();
 
