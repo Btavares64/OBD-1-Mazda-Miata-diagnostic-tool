@@ -9,14 +9,11 @@ int main()
     gpio_init(ON);	            
     gpio_set_dir(ON, GPIO_OUT); // CONFIRM IF THE DEVICE IS ON
 
-    gpio_init(READ_CODE);             
-    gpio_set_dir(READ_CODE, GPIO_IN); // START DIAGNOSTICS 
+    gpio_init(AIRBAG_TEST);             
+    gpio_set_dir(AIRBAG_TEST, GPIO_IN); // AIRBAG DIAGNOSTICS 
 
     gpio_init(ECU_TEST);             
-    gpio_set_dir(ECU_TEST, GPIO_IN); // COUNT BLINKS 
-
-    gpio_init(ENGINE_RESET);             
-    gpio_set_dir(ENGINE_RESET, GPIO_IN); // RESET ENGINE
+    gpio_set_dir(ECU_TEST, GPIO_IN); // ECU DIAGNOSTICS 
 
     // ######### INTRODUCTION AND USER SELECTION ##############
     
@@ -54,11 +51,11 @@ int main()
         switch (userInput)
         {
             case '1':
-                parsingTask(codeCount, numOfValidCodes);
+                parsingTask(codeValues, numOfValidCodes, 100);
                 codeTranslationTask(codeValues, numOfValidCodes, 100);
                 break;
             case '2':
-                parsingTask(codeCount, numOfValidCodes);
+                parsingTask(codeValues, numOfValidCodes, 200);
                 codeTranslationTask(codeValues, numOfValidCodes, 200);
                 break;
             case '3':
@@ -97,7 +94,7 @@ digit will be displayed. This will repeat after a four-second dark pause.
 If there are multiple codes, they will each be separated by a four-second 
 pause and may include two-digit codes, so pay attention.
 */
-int parsingTask(int* codeValues, int &numOfValidCodes)
+int parsingTask(int* codeValues, int &numOfValidCodes, int fileId)
 {
     clearTerminalTask();
  
@@ -115,6 +112,15 @@ int parsingTask(int* codeValues, int &numOfValidCodes)
         // I need to call codereadtask twice
         // I must append value into the array
         tempVal = codeReadTask();
+
+        if (fileID == 100)
+        {
+            codeReadECU();
+        }
+        if else (fileID = 200)
+        {
+            codeReadAirBag();
+        }
 
         //append array
         codeValues[codeReadCount] = tempVal;
@@ -152,8 +158,9 @@ bool codeExists(int* codeValues, int codeReadCount, int tempVal)
     return false;
 }
 
-int codeReadTask()
+int codeReadECU()
 {
+    
     // I need to intilize a pin in order to start reading
     bool reading = gpio_get(ECU_TEST);
 
@@ -197,6 +204,52 @@ int codeReadTask()
     return total;
 }
 
+int codeReadAirBag()
+{
+    
+    // I need to intilize a pin in order to start reading
+    bool reading = gpio_get(AIRBAG_TEST);
+
+    // control loop
+    bool control = true;
+
+    float timeKeep = 0.0;
+    int tens = 0;
+    int ones = 0;
+    int total = 0;
+
+    while (control) 
+    {
+        reading = !gpio_get(AIRBAG_TEST); 
+
+        if (reading) // read when the signal is low
+        {                       
+            sleep_ms(100);
+            timeKeep += 0.1;                 // increment in seconds
+
+            if (timeKeep >= 1.6 && tens == 0) 
+            {
+                tens += 10;
+            } 
+            else if (timeKeep >= 1.0 && tens > 0 && ones == 0) 
+            {
+                ones += 1;
+            } 
+            else if (timeKeep >= 4.0) 
+            {
+                total = tens + ones;
+                control = false;   
+            }
+        } 
+        else 
+        {
+            timeKeep = 0; // reset if signal goes high
+        }
+    }
+
+    return total;
+}
+
 
 /*
 loadSoftwareInstructions - function will assist users on the process of 
@@ -209,15 +262,18 @@ void loadSoftwareInstructions()
     std::cout << "\n##############################\n";
     std::cout << "# How To Use Diagnostic Tool #\n";
     std::cout << "##############################\n\n";
-    std::cout << "~~ This isn't final instruction guide ~~\n\n";
+    
     std::cout << "Getting Started:\n\n";
     std::cout << "- In order to get started you plug in your device, "; 
     std::cout << "once plugged in, turn your\n";
     std::cout << "  key into accessory mode\n\n";
-    std::cout << "- Open your terminal and interact with the interface to get ";
-    std::cout << "to the appropriate setting\n\n";
+    std::cout << "- Open your terminal make sure device is properly flashed. ";
+    std::cout << "Follow Github instructions for further guidence\n\n";
+
     std::cout << "Code Reset:\n\n";
-    std::cout << "- Allow the system 10 minutes in order to reset the engine code\n\n";
+    std::cout << "- Allow the system 10 minutes in order to reset the engine code\n";
+    std::cout << "- You must disconnect the negative terminal in the trunk\n";
+    std::cout << "- before selecting Reset Engine Code to ensure time is properly kept\n\n";
 
     char input;
 
@@ -252,9 +308,6 @@ void resetCodeTask()
     std::cout << "Keep termimal running while reseting code. Process may take up";
     std::cout << "to 10 minutes.\n"; 
 
-    gpio_put(ENGINE_RESET, 1);
-
-
 //####################### TIMER ################################################
     // update user every 30 seconds on the current wait time
     
@@ -277,10 +330,7 @@ void resetCodeTask()
             }
             std::cout << seconds << " remaining....\n\n";
         }
- 	
     }
-
-    gpio_put(ENGINE_RESET, 0);  //stop signal
 
     clearTerminalTask();
 
@@ -336,7 +386,7 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
     // ############# OUTPUT CODE ###############################################
 
     // This is to it iterate the amount of engine codes exist in codeValues array
-    while (index < count)
+    while (index < numOfValidCodes)
     {
         // this is for translating any code inside of the ecu code dictionary
         if (fileId == 100)
@@ -369,7 +419,7 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
             }
         }
         // increment to the next element in the array if it exists
-        index ++;
+        index++;
     }
 }
 

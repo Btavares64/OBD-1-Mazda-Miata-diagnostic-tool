@@ -9,17 +9,17 @@
 
 // ########### INCLUDE PICO RELATED LIBRARIES #########
 extern "C" {
+    #include "pico/stdio.h"
     #include "pico/stdlib.h"
 }
 
 
 // ######### CONSTANT DEFINITIONS #############
-#define ON 17
-#define READ_CODE 16
-#define ENGINE_RESET 18
+#define ON 25
+#define AIRBAG_TEST 16
 #define ECU_TEST 19
 #define MAX_SIZE 1024
-#define MAX_CODE_READ 5
+
 
 // ########## DICTIONARY TO HANDLE CODES ###############
 class Dictionary
@@ -32,11 +32,13 @@ class Dictionary
 
 // ######### FUNCTION PROTOTYPES #######################
 
-int parsingTask(int* codeValues, int &numOfValidCodes);
+int parsingTask(int* codeValues, int &numOfValidCodes, int fileId);
 
 bool codeExists(int* array, int codeReadCount, int tempVal);
 
-int codeReadTask();
+int codeReadECU();
+
+int codeReadAirBag();
 
 void loadSoftwareInstructions();
 
@@ -44,6 +46,6 @@ void resetCodeTask();
 
 void clearTerminalTask();
 
-void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
+void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId);
 
 #endif 
