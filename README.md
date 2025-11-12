@@ -3,15 +3,18 @@
 ## Author 
 - Brandon Tavares
 
+## Vehicle Compatibility 
+- NA Miata (1989-1993)
+  
 ## Goal of Program
-- Read blinks given by the ECU of from NA Miata (1989-1996)
-- translate blinks and send the result to a webserver for the user to read
-- reset code
-- website to interact with the diagnostic tool
+- Read blinks given by the Engine Control Unit and Airbag Module
+- Decode the blink codes and display the message on the terminal
+- Provide timer for the duration of code reset
+- CLI to interact with device menu
 
 ## Hardware Needed
 - Any Linux Distrobution
-- Raspberry pico
+- Raspberry Pico
 
 ## Preparing your Raspberry Pico
 
@@ -83,8 +86,9 @@ Launch Program in Minicom
 sudo minicom -D /dev/ttyACM0 -b 115200
 ```
 
-## Installing Hardware
+## Pico Wire Diagram
 
 ## References
 - https://www.miata.net/garage/faultcodes.html
+- https://www.mellens.net/mazda/Mazda-Miata-1991-1993/1991_wiring.pdf
 
