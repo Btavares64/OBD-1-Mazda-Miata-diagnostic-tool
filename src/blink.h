@@ -10,7 +10,6 @@
 // ########### INCLUDE PICO RELATED LIBRARIES #########
 extern "C" {
     #include "pico/stdlib.h"
-    #include "hardware/adc.h"   // this will allo us to read voltage
 }
 
 
@@ -45,6 +44,6 @@ void resetCodeTask();
 
 void clearTerminalTask();
 
-void codeTranslationTask(int count, int fileId);
+void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
 
 #endif 

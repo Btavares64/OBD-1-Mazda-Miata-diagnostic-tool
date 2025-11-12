@@ -167,9 +167,9 @@ int codeReadTask()
 
     while (control) 
     {
-        reading = !gpio_get(ECU_TEST); // update every loop
+        reading = !gpio_get(ECU_TEST); 
 
-        if (reading) // signal is low
+        if (reading) // read when the signal is low
         {                       
             sleep_ms(100);
             timeKeep += 0.1;                 // increment in seconds
@@ -185,7 +185,7 @@ int codeReadTask()
             else if (timeKeep >= 4.0) 
             {
                 total = tens + ones;
-                control = false;    // ends while loop
+                control = false;   
             }
         } 
         else 
@@ -218,8 +218,6 @@ void loadSoftwareInstructions()
     std::cout << "to the appropriate setting\n\n";
     std::cout << "Code Reset:\n\n";
     std::cout << "- Allow the system 10 minutes in order to reset the engine code\n\n";
-
-    
 
     char input;
 
@@ -298,9 +296,12 @@ void clearTerminalTask()
     std::cout << "#########################################\n\n";
 }
 
-void codeTranslationTask(int* codeValues, int count, int fileId)
+void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
 {
-    // ENGINE = 100 AIRBAG = 200
+    // for my reference count is just th enumber of members
+
+    // track the number of iterations
+    int index = 0;
 
     // ################## ERROR CODES ##########################################
 
@@ -333,28 +334,42 @@ void codeTranslationTask(int* codeValues, int count, int fileId)
     };
 
     // ############# OUTPUT CODE ###############################################
-    if (fileId == 100)
+
+    // This is to it iterate the amount of engine codes exist in codeValues array
+    while (index < count)
     {
-        for (int i = 0; i < sizeof(ecuDiagnostics) / sizeof(ecuDiagnostics[0]); i++)
+        // this is for translating any code inside of the ecu code dictionary
+        if (fileId == 100)
         {
-            if (ecuDiagnostics[i].key == count && ecuDiagnostics[i].fileID == fileId)
+            // increment through entire size of the dictionary
+            for (int i = 0; i < sizeof(ecuDiagnostics) / sizeof(ecuDiagnostics[0]); i++)
             {
-                std::cout << ecuDiagnostics[i].value;
+                // check if the current key is equal to the value inside the array
+                // and if the the current fileID is equal to the desired module
+                if (ecuDiagnostics[i].key == codeValues[index] && ecuDiagnostics[i].fileID == fileId)
+                {
+                    // output engine code
+                    std::cout << ecuDiagnostics[i].value << std::endl << std::endl;
+                }
             }
         }
-    }
-    else if (fileId == 200)
-    {
-        for (int i = 0; i < sizeof(airbagDiagnostics) / sizeof(airbagDiagnostics[0]); i++)
+        // this is for translating any code inside of the airbag code dictionary
+        else if (fileId == 200)
         {
-            if (airbagDiagnostics[i].key == count && airbagDiagnostics[i].fileID == fileId)
+            // increment through entire size of the dictionary
+            for (int i = 0; i < sizeof(airbagDiagnostics) / sizeof(airbagDiagnostics[0]); i++)
             {
-                std::cout << airbagDiagnostics[i].value;
+                // check if the current key is equal to the value inside the array
+                // and if the the current fileID is equal to the desired module
+                if (airbagDiagnostics[i].key == codeValues[index] && airbagDiagnostics[i].fileID == fileId)
+                {
+                    // output error code
+                    std::cout << airbagDiagnostics[i].value << std::endl << std::endl;
+                }
             }
         }
-    }
-    else
-    {
-        std::cout << "\nERROR OCCOURS WHILE PROCESSING ENGINE CODE...\n PLEASE TRY AGAIN.\n";
+        // increment to the next element in the array if it exists
+        index ++;
     }
 }
+
