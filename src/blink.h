@@ -15,7 +15,7 @@ extern "C" {
 
 
 // ######### CONSTANT DEFINITIONS #############
-#define ON 25
+#define ON 17
 #define AIRBAG_TEST 16
 #define ECU_TEST 19
 #define MAX_SIZE 1024

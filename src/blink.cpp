@@ -111,15 +111,13 @@ int parsingTask(int* codeValues, int &numOfValidCodes, int fileId)
     {
         // I need to call codereadtask twice
         // I must append value into the array
-        tempVal = codeReadTask();
-
-        if (fileID == 100)
+        if (fileId == 100)
         {
-            codeReadECU();
+            tempVal = codeReadECU();
         }
-        if else (fileID = 200)
+        else if (fileId = 200)
         {
-            codeReadAirBag();
+            tempVal = codeReadAirBag();
         }
 
         //append array
