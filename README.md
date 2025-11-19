@@ -74,10 +74,14 @@ project
 ```
 mkdir build; cd build; cmake ..; make
 ```
+Located the correct directory to copy blink.uf2
+```
+mount | grep RPI-RP2 | awk '{print $3}'
+```
 
 Flash the compiled program to the Raspberry Pico
 ```
-sudo cp blink.uf2 /media/$(whoami)/RPI-RP2
+sudo cp blink.uf2 <Result of the last command>
 ```
 
 Launch Program in Minicom
