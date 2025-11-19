@@ -74,11 +74,12 @@ project
 ```
 mkdir build; cd build; cmake ..; make
 ```
+Ensure Pico is set to BOOTSEL before locating directory
+
 Located the correct directory to copy blink.uf2
 ```
 mount | grep RPI-RP2 | awk '{print $3}'
 ```
-
 Flash the compiled program to the Raspberry Pico
 ```
 sudo cp blink.uf2 <Result of the last command>
