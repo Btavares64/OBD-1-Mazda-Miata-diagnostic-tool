@@ -11,7 +11,7 @@ int main()
 
     gpio_init(AIRBAG_TEST);             
     gpio_set_dir(AIRBAG_TEST, GPIO_IN); // AIRBAG DIAGNOSTICS 
-
+   
     gpio_init(ECU_TEST);             
     gpio_set_dir(ECU_TEST, GPIO_IN); // ECU DIAGNOSTICS 
 
@@ -31,8 +31,9 @@ int main()
     char userInput; // user input
     int blinkCount = 0;
     int numOfValidCodes = 0;    // track valid code reads for parsing function
+    
     // allocate mem for array of codes if it exists
-    int* codeValues = nullptr; 
+    int* codeValues = new int[MAX_SIZE]; 
                               
     
     std::cout << "1. Scan Engine\n";
@@ -87,13 +88,6 @@ int main()
     return 0;
 }
 
-/*
-If the code is a two-digit number, the "tens" digit will be displayed first, 
-then for a short 1.6-second period the light will be dark, then the "ones" 
-digit will be displayed. This will repeat after a four-second dark pause. 
-If there are multiple codes, they will each be separated by a four-second 
-pause and may include two-digit codes, so pay attention.
-*/
 int parsingTask(int* codeValues, int &numOfValidCodes, int fileId)
 {
     clearTerminalTask();
@@ -120,22 +114,28 @@ int parsingTask(int* codeValues, int &numOfValidCodes, int fileId)
             tempVal = codeReadAirBag();
         }
 
-        //append array
-        codeValues[codeReadCount] = tempVal;
-
-        // increment the code read count
-        codeReadCount++;
-
-        // I must check if the second value is not the same
-        if (codeReadCount > 1 && codeExists(codeValues, codeReadCount, tempVal))
+        // check if the code already exists
+        if (codeExists(codeValues, codeReadCount, tempVal))
         {
+            std::cout << "\nCode " << tempVal << " already exists. Stopping input.\n";
             control = false;
+        }
+        else
+        {
+            // append to array
+            codeValues[codeReadCount] = tempVal;
+            codeReadCount++;
         }
     }
 
     // add corrected value 
-    numOfValidCodes = codeReadCount -1;
+    numOfValidCodes = codeReadCount;
 
+    std::cout << "\nCodes stored in array:\n";
+    for (int i = 0; i < numOfValidCodes; i++)
+    {
+        std::cout << "array[" << i << "]: " << codeValues[i] << std::endl;
+    }
     // return sucess
     return 0;
 }
@@ -156,96 +156,101 @@ bool codeExists(int* codeValues, int codeReadCount, int tempVal)
     return false;
 }
 
+/*
+If the code is a two-digit number, the "tens" digit will be displayed first, 
+then for a short 1.6-second period the light will be dark, then the "ones" 
+digit will be displayed. This will repeat after a four-second dark pause. 
+If there are multiple codes, they will each be separated by a four-second 
+pause and may include two-digit codes, so pay attention.
+*/
 int codeReadECU()
 {
     
     // I need to intilize a pin in order to start reading
-    bool reading = gpio_get(ECU_TEST);
+    bool reading;
 
     // control loop
     bool control = true;
-
-    float timeKeep = 0.0;
-    int tens = 0;
-    int ones = 0;
-    int total = 0;
+    int timeKeep = 0;
 
     while (control) 
     {
-        reading = !gpio_get(ECU_TEST); 
+        reading = gpio_get(ECU_TEST);   // reading when on 
 
-        if (reading) // read when the signal is low
-        {                       
-            sleep_ms(100);
-            timeKeep += 0.1;                 // increment in seconds
-
-            if (timeKeep >= 1.6 && tens == 0) 
-            {
-                tens += 10;
-            } 
-            else if (timeKeep >= 1.0 && tens > 0 && ones == 0) 
-            {
-                ones += 1;
-            } 
-            else if (timeKeep >= 4.0) 
-            {
-                total = tens + ones;
-                control = false;   
-            }
-        } 
-        else 
+        // start reading at a low
+        if (!reading) 
         {
-            timeKeep = 0; // reset if signal goes high
+            std::cout << "The pin is OFF, duration: " << timeKeep << " s\n";
+            // start at the beginning of the engine code                          
+            if (timeKeep >= 4)
+            {
+                // done reading
+                control = false;
+            }
         }
+        else if (reading) // pin is high
+        {
+            // mark that the pin went high
+            std::cout << "pin is high\n";
+            
+            //
+
+            // reset timekeep
+            timeKeep = 0;
+        }
+        
+        sleep_ms(1000); // output every second to minicom terminal
+
+        // increment the time elapsed
+        timeKeep++;
     }
 
-    return total;
+    return 0;
 }
 
 int codeReadAirBag()
 {
     
     // I need to intilize a pin in order to start reading
-    bool reading = gpio_get(AIRBAG_TEST);
+    bool reading;
 
     // control loop
     bool control = true;
-
-    float timeKeep = 0.0;
-    int tens = 0;
-    int ones = 0;
-    int total = 0;
+    int timeKeep = 0;
 
     while (control) 
     {
-        reading = !gpio_get(AIRBAG_TEST); 
+        reading = gpio_get(AIRBAG_TEST);   // reading when on 
 
-        if (reading) // read when the signal is low
-        {                       
-            sleep_ms(100);
-            timeKeep += 0.1;                 // increment in seconds
-
-            if (timeKeep >= 1.6 && tens == 0) 
-            {
-                tens += 10;
-            } 
-            else if (timeKeep >= 1.0 && tens > 0 && ones == 0) 
-            {
-                ones += 1;
-            } 
-            else if (timeKeep >= 4.0) 
-            {
-                total = tens + ones;
-                control = false;   
-            }
-        } 
-        else 
+        // start reading at a low
+        if (!reading) 
         {
-            timeKeep = 0; // reset if signal goes high
+            std::cout << "The pin is OFF, duration: " << timeKeep << " s\n";
+            // start at the beginning of the airbag code                          
+            if (timeKeep > 3)
+            {
+                // done reading
+                control = false;
+            }
         }
+        else if (reading) // pin is high
+        {
+            // mark that the pin went high
+            std::cout << "pin is high\n";
+            
+            //
+
+            // reset timekeep
+            timeKeep = 0;
+        }
+        
+        sleep_ms(1000); // output every second to minicom terminal
+
+        // increment the time elapsed
+        timeKeep++;
     }
 
-    return total;
+    return 0;
 }
 
 
@@ -256,6 +261,7 @@ utilizing this diagnostics tool.
 void loadSoftwareInstructions()
 {
     clearTerminalTask();
+
     // instruction manual
     std::cout << "\n##############################\n";
     std::cout << "# How To Use Diagnostic Tool #\n";
@@ -300,6 +306,7 @@ void resetCodeTask()
     // clear previous terminal commands to make it easier to read
     clearTerminalTask();
 
+    std::cout << "###################\n";
     std::cout << "\n IMPORTANT NOTICE\n";
     std::cout << "###################\n";
     
@@ -346,7 +353,8 @@ void clearTerminalTask()
 
 void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
 {
-    // for my reference count is just th enumber of members
+    // clear previous terminal commands to make it easier to read
+    clearTerminalTask();
 
     // track the number of iterations
     int index = 0;
@@ -399,6 +407,10 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
                     // output engine code
                     std::cout << ecuDiagnostics[i].value << std::endl << std::endl;
                 }
+                else
+                {
+                    continue;
+                }
             }
         }
         // this is for translating any code inside of the airbag code dictionary
@@ -413,6 +425,10 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
                 {
                     // output error code
                     std::cout << airbagDiagnostics[i].value << std::endl << std::endl;
+                }
+                else
+                {
+                    continue;
                 }
             }
         }
