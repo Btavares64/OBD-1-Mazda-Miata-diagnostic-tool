@@ -134,8 +134,10 @@ int parsingTask(int* codeValues, int &numOfValidCodes, int fileId)
     std::cout << "\nCodes stored in array:\n";
     for (int i = 0; i < numOfValidCodes; i++)
     {
+        //this is for diagnostic purposes
         std::cout << "array[" << i << "]: " << codeValues[i] << std::endl;
     }
+
     // return sucess
     return 0;
 }
@@ -171,7 +173,7 @@ int codeReadECU()
 
     // control loop
     bool control = true;
-    int timeKeep = 0;
+    float timeKeep = 0;
 
     while (control) 
     {
@@ -216,7 +218,15 @@ int codeReadAirBag()
 
     // control loop
     bool control = true;
-    int timeKeep = 0;
+
+    // control the duration of the state
+    int timeKeepOff = 0;
+    int timeKeepOn = 0;
+
+    // counting variables
+    int tens = 0;
+    int ones = 0;
+    int total = 0;
 
     while (control) 
     {
@@ -225,32 +235,41 @@ int codeReadAirBag()
         // start reading at a low
         if (!reading) 
         {
-            std::cout << "The pin is OFF, duration: " << timeKeep << " s\n";
+            std::cout << "The pin is OFF, duration: " << timeKeepOff << " s\n";
             // start at the beginning of the airbag code                          
-            if (timeKeep > 3)
+            if (timeKeepOff > 3)
             {
                 // done reading
                 control = false;
             }
+
+            // reset the time for the on state
+            timeKeepOn = 0;
         }
         else if (reading) // pin is high
         {
             // mark that the pin went high
-            std::cout << "pin is high\n";
+            std::cout << "pin is high: " << timeKeepOn << std::endl;
             
-            //
+            //this is to calculate the tens value
+            if (timeKeepOn > 1)
+            {
+                // add ten to the value of the code
+                total = total + 10;
+            }
 
-            // reset timekeep
-            timeKeep = 0;
+            // reset timekeep for the off position
+            timeKeepOff = 0;
         }
         
         sleep_ms(1000); // output every second to minicom terminal
 
         // increment the time elapsed
-        timeKeep++;
+        timeKeepOn++;
+        timeKeepOff++;
     }
 
-    return 0;
+    return total;
 }
 
 
@@ -429,6 +448,8 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
                 else
                 {
                     continue;
+                    
+                    std::cout << "we out here";
                 }
             }
         }
@@ -436,4 +457,3 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
         index++;
     }
 }
-
