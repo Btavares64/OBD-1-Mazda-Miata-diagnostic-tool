@@ -109,7 +109,7 @@ int parsingTask(int* codeValues, int &numOfValidCodes, int fileId)
         {
             tempVal = codeReadECU();
         }
-        else if (fileId = 200)
+        else if (fileId == 200)
         {
             tempVal = codeReadAirBag();
         }
