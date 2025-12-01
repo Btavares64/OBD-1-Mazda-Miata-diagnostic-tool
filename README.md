@@ -42,7 +42,7 @@ Run
 git submodule update --init
 ```
 
-Next you to exit pico-sdk by running
+Next, exit pico-sdk library by running
 ```
 cd ..
 ```
