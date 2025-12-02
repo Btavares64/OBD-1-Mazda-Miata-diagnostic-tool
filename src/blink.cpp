@@ -173,7 +173,13 @@ int codeReadECU()
 
     // control loop
     bool control = true;
-    float timeKeep = 0;
+
+    // control the duration of the state
+    float timeKeepOff = 0;
+    float timeKeepOn = 0;
+
+    // counting variables
+    int total = 0;
 
     while (control) 
     {
@@ -182,32 +188,44 @@ int codeReadECU()
         // start reading at a low
         if (!reading) 
         {
-            std::cout << "The pin is OFF, duration: " << timeKeep << " s\n";
-            // start at the beginning of the engine code                          
-            if (timeKeep >= 4)
+            std::cout << "The pin is OFF, duration: " << timeKeepOff << " s\n";
+            // start at the beginning of the airbag code                          
+            if (timeKeepOff >= 3.9)
             {
                 // done reading
                 control = false;
             }
+            
+            //this is to calculate the tens value
+            if (timeKeepOn > 1)
+            {
+                // add ten to the value of the code
+                total = total + 10;
+            }
+            else if (timeKeepOn < 1 && timeKeepOn > 0)
+            {
+                total = total + 1;
+            } 
+
+            // reset the time for the on state
+            timeKeepOn = 0;
+            timeKeepOff += .1;
         }
         else if (reading) // pin is high
         {
             // mark that the pin went high
-            std::cout << "pin is high\n";
+            std::cout << "pin is high: " << timeKeepOn << std::endl;
             
-            //
-
-            // reset timekeep
-            timeKeep = 0;
+            // reset timekeep for the off position
+            timeKeepOff = 0;
+            timeKeepOn += .1;
         }
         
-        sleep_ms(1000); // output every second to minicom terminal
+        sleep_ms(100); // output every tenth of a second to minicom terminal
 
-        // increment the time elapsed
-        timeKeep++;
     }
 
-    return 0;
+    return total;
 }
 
 int codeReadAirBag()
@@ -220,12 +238,10 @@ int codeReadAirBag()
     bool control = true;
 
     // control the duration of the state
-    int timeKeepOff = 0;
-    int timeKeepOn = 0;
+    float timeKeepOff = 0;
+    float timeKeepOn = 0;
 
     // counting variables
-    int tens = 0;
-    int ones = 0;
     int total = 0;
 
     while (control) 
@@ -237,19 +253,11 @@ int codeReadAirBag()
         {
             std::cout << "The pin is OFF, duration: " << timeKeepOff << " s\n";
             // start at the beginning of the airbag code                          
-            if (timeKeepOff > 3)
+            if (timeKeepOff >= 3.9)
             {
                 // done reading
                 control = false;
             }
-
-            // reset the time for the on state
-            timeKeepOn = 0;
-        }
-        else if (reading) // pin is high
-        {
-            // mark that the pin went high
-            std::cout << "pin is high: " << timeKeepOn << std::endl;
             
             //this is to calculate the tens value
             if (timeKeepOn > 1)
@@ -257,16 +265,27 @@ int codeReadAirBag()
                 // add ten to the value of the code
                 total = total + 10;
             }
+            else if (timeKeepOn < 1 && timeKeepOn > 0)
+            {
+                total = total + 1;
+            } 
 
+            // reset the time for the on state
+            timeKeepOn = 0;
+            timeKeepOff += .1;
+        }
+        else if (reading) // pin is high
+        {
+            // mark that the pin went high
+            std::cout << "pin is high: " << timeKeepOn << std::endl;
+            
             // reset timekeep for the off position
             timeKeepOff = 0;
+            timeKeepOn += .1;
         }
         
-        sleep_ms(1000); // output every second to minicom terminal
+        sleep_ms(100); // output every tenth of a second to minicom terminal
 
-        // increment the time elapsed
-        timeKeepOn++;
-        timeKeepOff++;
     }
 
     return total;
