@@ -91,6 +91,8 @@ sudo minicom -D /dev/ttyACM0 -b 115200
 ```
 
 ## Pico Wire Diagram
+/OBD-1-Mazda-Miata-diagnostic-tool/diagram
+![diagram](./OBD-1-Mazda-Miata-diagnostic-tool/diagram/circuit.png)
 
 ## References
 - https://www.miata.net/garage/faultcodes.html
