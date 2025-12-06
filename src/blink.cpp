@@ -131,13 +131,16 @@ int parsingTask(int* codeValues, int &numOfValidCodes, int fileId)
     // add corrected value 
     numOfValidCodes = codeReadCount;
 
-    std::cout << "\nCodes stored in array:\n";
+    // ######## THIS IS FOR PARSING IN THE VALUE IS PROLOG
+
+    std::cout << "##CODE_START##\n"; //START MARKER
     for (int i = 0; i < numOfValidCodes; i++)
     {
-        //this is for diagnostic purposes
-        std::cout << "array[" << i << "]: " << codeValues[i] << std::endl;
+        //this is for diagnostis.pl
+        std::cout << codeValues[i] << ", "<< fileId << std::endl;
     }
-
+    
+    std::cout << "##CODE_END##\n";
     // return sucess
     return 0;
 }
@@ -467,8 +470,6 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
                 else
                 {
                     continue;
-                    
-                    std::cout << "we out here";
                 }
             }
         }
