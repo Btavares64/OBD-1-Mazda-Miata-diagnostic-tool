@@ -101,7 +101,7 @@ sudo minicom -D /dev/ttyACM0 -b 115200
 -  Go back to the src directory
 -  run swipl diagnostics.pl
 -  enter "main." to get your engine code prediction
--  
+
 ## References
 - https://www.miata.net/garage/faultcodes.html
 - https://www.mellens.net/mazda/Mazda-Miata-1991-1993/1991_wiring.pdf
