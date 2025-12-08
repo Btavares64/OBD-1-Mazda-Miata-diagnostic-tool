@@ -93,6 +93,15 @@ sudo minicom -D /dev/ttyACM0 -b 115200
 ## Pico Wire Diagram
 ![diagram](./diagram/circuit.png)
 
+## Using Saving results to Prolog with Minicom
+- Before interacting with CLI you must select Ctrl + A then L to beginning logging process
+- save the output to "log.txt"
+- After interacting with program, before you end Minicom you must enter Ctrl + A then L again to stop capturing
+-  Now enter Ctrl + a then x to exit Minicom.
+-  Go back to the src directory
+-  run swipl diagnostics.pl
+-  enter "main." to get your engine code prediction
+-  
 ## References
 - https://www.miata.net/garage/faultcodes.html
 - https://www.mellens.net/mazda/Mazda-Miata-1991-1993/1991_wiring.pdf
