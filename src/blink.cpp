@@ -1,38 +1,31 @@
-// INCLUDE THE H FILE 
 #include "blink.h"
 
 int main()
 {
-    // ######### INTILIZE PINS ##############
     stdio_init_all();
 
     gpio_init(ON);	            
-    gpio_set_dir(ON, GPIO_OUT); // CONFIRM IF THE DEVICE IS ON
+    gpio_set_dir(ON, GPIO_OUT); 
 
     gpio_init(AIRBAG_TEST);             
-    gpio_set_dir(AIRBAG_TEST, GPIO_IN); // AIRBAG DIAGNOSTICS 
+    gpio_set_dir(AIRBAG_TEST, GPIO_IN);
    
     gpio_init(ECU_TEST);             
-    gpio_set_dir(ECU_TEST, GPIO_IN); // ECU DIAGNOSTICS 
-
-    // ######### INTRODUCTION AND USER SELECTION ##############
+    gpio_set_dir(ECU_TEST, GPIO_IN);
     
     gpio_put(ON, 1);
 
-    // start program when minicom is open
+	//wehn minicom is open
     while(!stdio_usb_connected())
     {
         sleep_ms(100);
     }
 
-    // clear previous terminal commands to make it easier to read
     clearTerminalTask();
 
-    char userInput; // user input
+    char userInput;
     int blinkCount = 0;
-    int numOfValidCodes = 0;    // track valid code reads for parsing function
-    
-    // allocate mem for array of codes if it exists
+    int numOfValidCodes = 0;   
     int* codeValues = new int[MAX_SIZE]; 
                               
     
@@ -48,7 +41,6 @@ int main()
     {
         std::cin >> userInput;
 
-        // This switch case will handle user selection
         switch (userInput)
         {
             case '1':
@@ -82,7 +74,6 @@ int main()
     
     }
 
-    /// deallocate mem
     delete[] codeValues;
 
     return 0;
@@ -141,7 +132,7 @@ int parsingTask(int* codeValues, int &numOfValidCodes, int fileId)
     }
     
     std::cout << "##CODE_END##\n";
-    // return sucess
+
     return 0;
 }
 
@@ -174,19 +165,17 @@ int codeReadECU()
     // I need to intilize a pin in order to start reading
     bool reading;
 
-    // control loop
     bool control = true;
 
     // control the duration of the state
     float timeKeepOff = 0;
     float timeKeepOn = 0;
 
-    // counting variables
     int total = 0;
 
     while (control) 
     {
-        reading = gpio_get(ECU_TEST);   // reading when on 
+        reading = gpio_get(ECU_TEST);  
 
         // start reading at a low
         if (!reading) 
@@ -233,11 +222,8 @@ int codeReadECU()
 
 int codeReadAirBag()
 {
-    
-    // I need to intilize a pin in order to start reading
     bool reading;
 
-    // control loop
     bool control = true;
 
     // control the duration of the state
@@ -249,8 +235,7 @@ int codeReadAirBag()
 
     while (control) 
     {
-        reading = gpio_get(AIRBAG_TEST);   // reading when on 
-
+        reading = gpio_get(AIRBAG_TEST);  
         // start reading at a low
         if (!reading) 
         {
@@ -294,11 +279,6 @@ int codeReadAirBag()
     return total;
 }
 
-
-/*
-loadSoftwareInstructions - function will assist users on the process of 
-utilizing this diagnostics tool.
-*/
 void loadSoftwareInstructions()
 {
     clearTerminalTask();
@@ -322,10 +302,8 @@ void loadSoftwareInstructions()
 
     char input;
 
-    // return back to menu
     std::cout << "\nEnter 1 to Return Back to Main Menu\n\n";
 
-    // return to the menu
     while(input != '1')
     {
         std::cin >> input;
@@ -394,10 +372,7 @@ void clearTerminalTask()
 
 void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
 {
-    // clear previous terminal commands to make it easier to read
     clearTerminalTask();
-
-    // track the number of iterations
     int index = 0;
 
     // ################## ERROR CODES ##########################################
@@ -431,11 +406,9 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
     };
 
     // ############# OUTPUT CODE ###############################################
-
-    // This is to it iterate the amount of engine codes exist in codeValues array
     while (index < numOfValidCodes)
     {
-        // this is for translating any code inside of the ecu code dictionary
+        // ecu code dictionary
         if (fileId == 100)
         {
             // increment through entire size of the dictionary
@@ -445,7 +418,6 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
                 // and if the the current fileID is equal to the desired module
                 if (ecuDiagnostics[i].key == codeValues[index] && ecuDiagnostics[i].fileID == fileId)
                 {
-                    // output engine code
                     std::cout << ecuDiagnostics[i].value << std::endl << std::endl;
                 }
                 else
@@ -454,17 +426,15 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
                 }
             }
         }
-        // this is for translating any code inside of the airbag code dictionary
+        // airbag code dictionary
         else if (fileId == 200)
         {
-            // increment through entire size of the dictionary
             for (int i = 0; i < sizeof(airbagDiagnostics) / sizeof(airbagDiagnostics[0]); i++)
             {
                 // check if the current key is equal to the value inside the array
                 // and if the the current fileID is equal to the desired module
                 if (airbagDiagnostics[i].key == codeValues[index] && airbagDiagnostics[i].fileID == fileId)
                 {
-                    // output error code
                     std::cout << airbagDiagnostics[i].value << std::endl << std::endl;
                 }
                 else
@@ -473,7 +443,6 @@ void codeTranslationTask(int* codeValues, int numOfValidCodes, int fileId)
                 }
             }
         }
-        // increment to the next element in the array if it exists
         index++;
     }
 }
