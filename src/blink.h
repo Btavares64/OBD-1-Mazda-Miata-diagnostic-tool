@@ -1,28 +1,22 @@
-// ######### INCLUSION GUARDS ####################
 #ifndef BLINK_H
 #define BLINK_H
 
-// ########## INCLUDE STANDARD LIBRARIES #############
+
 #include <iostream>                    
 #include <string.h>
 #include <stdbool.h>
 
-// ########### INCLUDE PICO RELATED LIBRARIES #########
 extern "C" {
     #include "pico/stdio.h"
     #include "pico/stdlib.h"
     #include "pico/time.h"
 }
 
-
-// ######### CONSTANT DEFINITIONS #############
 #define ON 17
 #define AIRBAG_TEST 16
 #define ECU_TEST 19
 #define MAX_SIZE 1024
 
-
-// ########## DICTIONARY TO HANDLE CODES ###############
 class Dictionary
 {
     public:
@@ -30,8 +24,6 @@ class Dictionary
         int fileID;
         char value[MAX_SIZE];
 };
-
-// ######### FUNCTION PROTOTYPES #######################
 
 int parsingTask(int* codeValues, int &numOfValidCodes, int fileId);
 
